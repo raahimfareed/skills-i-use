@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>The Printed Manual</title>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400..700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:#fbfaf7;color:#1a1a1a;font:17px/1.6 Literata,Georgia,serif}
+.run{height:48px;display:flex;justify-content:space-between;align-items:center;padding:0 64px;border-bottom:1px solid #1a1a1a;font-size:13px;font-variant:small-caps;letter-spacing:.08em}
+.wrap{display:grid;grid-template-columns:320px 1fr;height:852px}
+nav{padding:56px 32px 0 64px;font-size:15px}
+nav h2{font-size:13px;font-variant:small-caps;letter-spacing:.1em;font-weight:600;margin-bottom:16px}
+nav ol{list-style:none;padding:0}
+nav li{display:flex;gap:14px;padding:7px 0;border-bottom:1px dotted #b9b4a8}
+nav li span{width:22px;color:#0f5f66;font:600 13px JetBrains Mono,monospace;padding-top:3px}
+main{padding:56px 96px 0 72px;display:grid;grid-template-columns:120px 680px;column-gap:32px;align-content:start}
+.ml{font-size:12px;font-variant:small-caps;letter-spacing:.1em;color:#0f5f66;text-align:right;padding-top:8px}
+h1{font-size:64px;line-height:1.05;font-weight:600;letter-spacing:-.015em;grid-column:2}
+.sub{grid-column:2;font-style:normal;color:#55524a;margin:10px 0 26px;font-size:18px}
+p{grid-column:2;margin-bottom:26px}
+p code{font:14.5px JetBrains Mono,monospace;background:#e9e6df;padding:1px 5px}
+.listing{grid-column:2;border-top:2px solid #1a1a1a;border-bottom:2px solid #1a1a1a}
+.listing .cap{display:flex;justify-content:space-between;font-size:13px;padding:8px 0;border-bottom:1px solid #1a1a1a}
+.listing .cap b{font-weight:600}
+.l{display:grid;grid-template-columns:28px 1fr 56px;align-items:center;height:44px;border-bottom:1px solid #d9d5cb;font:14.5px JetBrains Mono,monospace}
+.l:last-child{border-bottom:0}
+.l i{color:#635e54;font-style:normal;font-size:12px}
+.l u{text-decoration:none;font:12px Literata,serif;font-variant:small-caps;letter-spacing:.08em;color:#0f5f66;justify-self:end}
+h2.ch{grid-column:2;font-size:34px;font-weight:600;margin-top:40px}
+.chn{font:600 34px JetBrains Mono,monospace;color:#0f5f66;text-align:right;margin-top:40px}
+</style></head><body>
+<div class="run"><span>Skills I Use</span><span>A reference for Claude Code</span><span>November 2026</span></div>
+<div class="wrap">
+<nav><h2>Contents</h2><ol>
+<li><span>0</span>Skills, and where they live</li>
+<li><span>0.1</span>Quick install</li>
+<li><span>1</span>Impeccable</li>
+<li><span>2</span>Karpathy Guidelines</li>
+<li><span>3</span>Superpowers</li>
+<li><span>4</span>Taste Skill</li>
+<li><span>5</span>Trail of Bits Skills</li>
+<li><span>6</span>How they stack</li>
+<li><span>7</span>Before you install</li>
+</ol></nav>
+<main>
+<h1>Skills I Use</h1>
+<div class="sub">Five Claude Code skills: installation, purpose, and one worked example each.</div>
+<div class="ml">Where</div>
+<p>A skill is a folder of instructions and scripts that Claude Code loads when a task calls for it. Skills install to <code>~/.claude/skills/</code> globally or <code>.claude/skills/</code> per project.</p>
+<div class="ml">Listing 0.1</div>
+<div class="listing">
+<div class="cap"><b>Quick install</b><span>one command per skill</span></div>
+<div class="l"><i>1</i><span>npx impeccable install</span><u>copy</u></div>
+<div class="l"><i>2</i><span>/plugin marketplace add forrestchang/andrej-karpathy-skills</span><u>copy</u></div>
+<div class="l"><i>3</i><span>/plugin install superpowers@claude-plugins-official</span><u>copy</u></div>
+<div class="l"><i>4</i><span>npx skills add https://github.com/Leonxlnx/taste-skill ...</span><u>copy</u></div>
+<div class="l"><i>5</i><span>/plugin marketplace add trailofbits/skills</span><u>copy</u></div>
+</div>
+<div class="chn">1</div><h2 class="ch">Impeccable</h2>
+</main></div>
+</body></html>

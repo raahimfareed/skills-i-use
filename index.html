@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills I Use</title>
+<meta name="description" content="Five Claude Code skills: how to install each, what each is good for, and one realistic example of using it.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>
+:root{
+  color-scheme:light;
+  --paper:#f1f3f4; --ink:#15181b; --muted:#4d5257; --rule:#c2c7ca; --code:#e3e7e9;
+  --l1:#d4351c; --l2:#b08400; --l3:#0b5cad; --l4:#1c7c54; --l5:#7b4a1e;
+  --on1:#fff; --on2:#15181b; --on3:#fff; --on4:#fff; --on5:#fff;
+  --sans:Archivo,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme=light]){
+    color-scheme:dark;
+    --paper:#121416; --ink:#ecebe4; --muted:#a8acb0; --rule:#383c41; --code:#1e2125;
+    --l1:#ff6a4d; --l2:#f2b900; --l3:#5aa9f0; --l4:#4cc08a; --l5:#cf9a63;
+    --on1:#121416; --on2:#121416; --on3:#121416; --on4:#121416; --on5:#121416;
+  }
+}
+:root[data-theme=dark]{
+  color-scheme:dark;
+  --paper:#121416; --ink:#ecebe4; --muted:#a8acb0; --rule:#383c41; --code:#1e2125;
+  --l1:#ff6a4d; --l2:#f2b900; --l3:#5aa9f0; --l4:#4cc08a; --l5:#cf9a63;
+  --on1:#121416; --on2:#121416; --on3:#121416; --on4:#121416; --on5:#121416;
+}
+.l1{--c:var(--l1);--on:var(--on1)} .l2{--c:var(--l2);--on:var(--on2)} .l3{--c:var(--l3);--on:var(--on3)}
+.l4{--c:var(--l4);--on:var(--on4)} .l5{--c:var(--l5);--on:var(--on5)}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scrollbar-color:var(--muted) var(--paper);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans);font-optical-sizing:auto;word-spacing:.03em;text-rendering:geometricPrecision;accent-color:var(--ink)}
+::selection{background:var(--ink);color:var(--paper)}
+h1,h2,h3,p,ul,ol,figure,table{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+code,kbd{font-family:var(--mono);font-size:.875em;word-spacing:0}
+p code,li code,td code,th code{background:var(--code);padding:1px 5px;overflow-wrap:anywhere}
+.label,h1,.plain h2,.opener h2,.notice h2,.stages b,.net .st{word-spacing:.12em}
+.label{font-stretch:75%;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.skip{position:absolute;left:8px;top:-60px;background:var(--ink);color:var(--paper);padding:8px 12px;z-index:10}
+.skip:focus{top:8px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+/* Masthead */
+.mast{height:56px;border-bottom:2px solid var(--ink);display:flex;align-items:center;gap:24px;padding:0 48px}
+.mast .bands{display:flex;gap:3px}
+.mast .bands i{display:block;width:10px;height:26px;background:var(--c)}
+.mast .name{font-stretch:75%;font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase}
+.mast .checked{margin-left:auto;color:var(--muted)}
+.theme{font:inherit;font-stretch:75%;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink);background:none;border:1px solid var(--ink);padding:5px 10px;min-height:30px;cursor:pointer}
+.theme:hover,.copy:hover{background:var(--ink);color:var(--paper)}
+
+/* Frame */
+.wrap{display:grid;grid-template-columns:300px minmax(0,1fr)}
+.rail{border-right:1px solid var(--rule)}
+.rail details{position:sticky;top:0;max-height:100vh;overflow:auto;padding:44px 24px 32px 48px}
+.rail summary{list-style:none;color:var(--muted);margin-bottom:22px}
+.rail summary::-webkit-details-marker{display:none}
+.here{display:none}
+.route{position:relative;padding-left:34px}
+.route::before{content:"";position:absolute;left:7px;top:10px;bottom:16px;width:4px;background:var(--ink)}
+.route li{position:relative}
+.route a{display:block;text-decoration:none;padding:5px 0 9px;font-size:14px;line-height:1.3}
+.route a:hover .t{text-decoration:underline;text-underline-offset:3px}
+.route a::before{content:"";position:absolute;left:-31px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--ink);transition:background-color .15s ease-out}
+.route .major a{font-weight:650;font-size:15px;padding:7px 0 11px}
+.route .major a::before{left:-32px;top:8px;width:14px;height:14px;border:4px solid var(--c)}
+.route small{display:block;font-weight:400;font-size:12px;color:var(--muted);font-stretch:88%}
+.route a[aria-current]::before{background:var(--ink)}
+.route .major a[aria-current]::before{background:var(--c)}
+.route a[aria-current] .t{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+
+main{padding:44px 72px 96px;min-width:0}
+main>*{max-width:1000px}
+.prose,.pitch{max-width:68ch}
+p{text-wrap:pretty}
+h1{font-size:clamp(44px,6.2vw,76px);line-height:.95;font-weight:800;font-stretch:70%;letter-spacing:-.01em;text-wrap:balance}
+.lead{font-size:17px;margin-top:18px}
+.lead+.lead{margin-top:10px}
+section{scroll-margin-top:16px}
+#quick-install{margin-top:36px}
+.plain{margin-top:64px;border-top:2px solid var(--ink);padding-top:16px}
+.plain h2{font-size:30px;line-height:1.1;font-weight:800;font-stretch:75%;margin-bottom:10px}
+h3{font-stretch:75%;font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin:30px 0 8px}
+
+/* Command rows */
+.cmds{border-top:1px solid var(--ink)}
+.cmd{display:grid;grid-template-columns:64px minmax(0,1fr) 84px auto;column-gap:16px;align-items:center;min-height:40px;padding:5px 0;border-bottom:1px solid var(--rule)}
+.cmd .step{color:var(--muted)}
+.cmd code{font-size:14px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere;background:none;padding:0}
+.nb{white-space:nowrap}
+.cmd .step{white-space:nowrap}
+.cmd .env{font-size:13px;color:var(--muted)}
+.cmd .hint{display:block;font-family:var(--sans);font-size:13px;color:var(--muted)}
+.copy{font:inherit;font-stretch:75%;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink);background:none;border:1px solid var(--ink);padding:2px 8px;min-width:60px;min-height:26px;cursor:pointer;position:relative}
+.copy[data-done]{background:var(--ink);color:var(--paper)}
+
+/* Quick install timetable */
+.tt-sub{margin:0;padding:18px 0 8px;border-bottom:1px solid var(--ink)}
+.tt{margin-top:20px;border-top:2px solid var(--ink)}
+.tt-head,.qi{display:grid;grid-template-columns:176px minmax(0,1fr);column-gap:20px}
+.tt-head{padding:8px 0;border-bottom:1px solid var(--ink)}
+.tt-head .cols{display:grid;grid-template-columns:64px minmax(0,1fr) 84px 60px;column-gap:16px}
+.qi{border-bottom:1px solid var(--ink)}
+.qi .who{display:flex;align-items:flex-start;gap:10px;padding-top:7px;line-height:1.25;font-weight:650}
+.qi .who a{text-decoration:none}
+.qi .who a:hover{text-decoration:underline}
+.qi .cmds{border-top:0}
+.qi .cmd:last-child{border-bottom:0}
+.disc{flex:none;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--c);color:var(--on);font-size:13px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+
+/* Skill lines */
+.line{margin-top:72px;border-top:10px solid var(--c);padding-top:14px}
+.opener{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.opener .disc{width:40px;height:40px;font-size:20px;font-weight:800}
+.opener h2{font-size:clamp(32px,4vw,44px);line-height:1;font-weight:800;font-stretch:72%}
+.opener .src{margin-left:auto;font-size:14px;color:var(--muted)}
+.pitch{font-size:19px;line-height:1.45;margin-top:14px}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;border-top:1px solid var(--ink)}
+.benefits li{position:relative;padding:10px 0 10px 18px;border-bottom:1px solid var(--rule);font-size:15px;line-height:1.5}
+.benefits li::before{content:"";position:absolute;left:0;top:18px;width:7px;height:7px;background:var(--c)}
+.benefits b{font-weight:650}
+table{width:100%;border-collapse:collapse;border-top:1px solid var(--ink);font-size:15px;line-height:1.5;font-variant-numeric:tabular-nums}
+th,td{text-align:left;vertical-align:top;padding:9px 16px 9px 0;border-bottom:1px solid var(--rule);font-weight:400}
+tbody th{width:230px;font-weight:650}
+thead th{font-stretch:75%;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;border-bottom:1px solid var(--ink);color:var(--muted)}
+.note{font-size:14px;color:var(--muted);margin-top:10px;max-width:68ch}
+.example{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.prompt{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:start;background:var(--code);padding:14px 16px}
+.prompt code{font-size:14px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.prompt code::before{content:"> ";color:var(--muted)}
+.happens{padding:14px 0 16px;max-width:68ch}
+.happens .label{color:var(--muted);display:block;margin-bottom:6px}
+.happens ol{counter-reset:s}
+.happens li{counter-increment:s;position:relative;padding-left:26px;margin-top:6px;font-size:15px}
+.happens li::before{content:counter(s);position:absolute;left:0;top:0;font-weight:700;font-variant-numeric:tabular-nums}
+
+/* Network figure */
+.net{margin-top:20px;border-top:1px solid var(--ink);padding:16px 0 0}
+.net svg{display:block;width:100%;height:auto;font-family:var(--sans)}
+.net .tall{display:none;max-width:340px}
+.net .trunk{stroke:var(--ink);stroke-width:2;fill:none}
+.net .seg{stroke-width:10;stroke-linecap:round;fill:none}
+.net .stn{fill:var(--paper);stroke:var(--ink);stroke-width:3}
+.net text{fill:var(--ink)}
+.net .st{font-size:18px;font-weight:800;font-stretch:75%}
+.net .ln{font-size:14px}
+.net .tm{font-size:13px;font-weight:700;letter-spacing:.09em;font-stretch:75%;text-transform:uppercase;fill:var(--muted)}
+.net .dn{font-size:12px;font-weight:700}
+.stages{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px}
+.stages li{border-top:1px solid var(--ink);padding:10px 0;font-size:15px;line-height:1.5}
+.stages b{display:block;font-weight:800;font-stretch:75%;font-size:18px;margin-bottom:2px}
+
+.notice{margin-top:64px;border:2px solid var(--ink);padding:18px 22px 20px}
+.notice h2{font-size:26px;line-height:1.1;font-weight:800;font-stretch:75%;margin-bottom:8px}
+.notice ul{margin-top:10px;max-width:68ch}
+.notice li{position:relative;padding-left:18px;margin-top:6px;font-size:15px}
+.notice li::before{content:"";position:absolute;left:0;top:10px;width:7px;height:2px;background:var(--ink)}
+footer{margin-top:64px;border-top:2px solid var(--ink);padding-top:14px;font-size:14px;color:var(--muted)}
+footer ul{margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:2px 32px}
+footer a{color:var(--ink);display:inline-block;padding:3px 0}
+
+@media screen and (max-width:1240px){
+  main{padding:44px 40px 96px}
+  .tt-head{display:none}
+  .qi{display:block}
+  .qi .who{padding:12px 0 6px}
+  .qi .cmd:first-child{border-top:1px solid var(--rule)}
+}
+@media screen and (max-width:960px){
+  .mast{padding:0 20px;gap:14px;height:52px}
+  .mast .sub,.mast .checked{display:none}
+  .mast .theme{margin-left:auto}
+  .wrap{display:block}
+  .rail{border-right:0;border-bottom:1px solid var(--ink);position:sticky;top:0;z-index:5;background:var(--paper)}
+  section{scroll-margin-top:64px}
+  .rail details{position:static;max-height:calc(100vh - 8px);padding:0 20px}
+  .here{display:block;margin-left:auto;margin-right:14px;font-size:13px;letter-spacing:0;text-transform:none;font-stretch:100%;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rail summary{display:flex;align-items:center;justify-content:space-between;min-height:48px;margin:0;color:var(--ink);cursor:pointer}
+  .rail summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-3px) rotate(45deg)}
+  .rail details[open] summary::after{transform:translateY(2px) rotate(-135deg)}
+  .rail .route{margin:6px 0 18px}
+  .route a,.route .major a{padding:8px 0 12px;min-height:44px}
+  .qi .who a,.opener .src{display:inline-block;padding:6px 0}
+  main{padding:28px 20px 72px}
+    .cmd{grid-template-columns:auto minmax(0,1fr) auto;grid-template-areas:"step env copy" "code code code";row-gap:6px;padding:10px 0 12px}
+  .cmd .step{grid-area:step}.cmd .env{grid-area:env}.cmd code{grid-area:code}
+  .cmd .copy{grid-area:copy}
+  .copy::after{content:"";position:absolute;inset:-9px -6px}
+  .theme{position:relative}
+  .theme::after{content:"";position:absolute;inset:-7px -4px}
+  .benefits{grid-template-columns:1fr}
+  .stages{grid-template-columns:1fr}
+  tbody th{width:38%}
+  .line{margin-top:56px}
+  .opener .src{margin-left:0;flex-basis:100%}
+  .prompt{grid-template-columns:1fr}
+  .prompt .copy{justify-self:start}
+  footer ul{grid-template-columns:1fr}
+}
+@media screen and (max-width:700px){
+  .net .wide{display:none}
+  .net .tall{display:block}
+}
+@media (prefers-reduced-motion:reduce){
+  .route a::before{transition:none}
+}
+
+@page{size:A4;margin:16mm 15mm 18mm}
+@media print{
+  :root:not(#_){
+    color-scheme:light;
+    --paper:#fff; --ink:#111; --muted:#444; --rule:#bbb; --code:#eee;
+    --l1:#d4351c; --l2:#b08400; --l3:#0b5cad; --l4:#1c7c54; --l5:#7b4a1e;
+    --on1:#fff; --on2:#111; --on3:#fff; --on4:#fff; --on5:#fff;
+  }
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-size:10pt;line-height:1.45}
+  .skip,.rail,.copy,.theme{display:none!important}
+  .mast{height:auto;padding:0 0 6pt;gap:12pt}
+  .mast .checked{display:block}
+  .wrap{display:block}
+  main{padding:14pt 0 0}
+  main>*,.prose,.pitch,.happens,.note,.notice ul{max-width:none}
+  h1{font-size:38pt}
+  .lead{font-size:11pt}
+  .pitch{font-size:12pt}
+  .plain,.notice,footer{margin-top:22pt}
+  .line{margin-top:0;border-top-width:6pt;break-before:page}
+  h3{margin-top:14pt}
+  .cmd{grid-template-columns:60px minmax(0,1fr) 68px;min-height:0;padding:3pt 0}
+  .tt-head .cols{grid-template-columns:60px minmax(0,1fr) 68px}
+  .tt-head .cols span:last-child{display:none}
+  .tt-head,.qi{grid-template-columns:150px minmax(0,1fr)}
+  .cmd code,.prompt code,code{font-size:8.5pt;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}
+  .benefits li,.stages li,th,td,.happens li,.notice li{font-size:9.5pt}
+  th,td{padding:4pt 10pt 4pt 0}
+  .prompt{grid-template-columns:1fr;padding:8pt 10pt}
+  h1,h2,h3,.opener,.pitch{break-after:avoid}
+  .cmds,.cmd,.qi,.example,.prompt,.happens,.benefits li,tr,.net,.stages,.notice,.opener,footer{break-inside:avoid}
+  p,li{orphans:3;widows:3}
+  a{text-decoration:none}
+  main a[href^="http"]:not(.src)::after{content:" (" attr(href) ")";font-size:.88em;color:var(--muted);overflow-wrap:anywhere;word-break:break-all}
+  .net .wide{display:block;max-height:60mm}
+  .net .tall{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+
+<header class="mast">
+  <span class="bands" aria-hidden="true"><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l5"></i></span>
+  <span class="name">Skills I Use</span>
+  <span class="label sub">Claude Code reference</span>
+  <span class="label checked">Checked against source, 11 November 2026</span>
+  <button class="theme" type="button" id="theme" hidden>Dark</button>
+</header>
+
+<div class="wrap">
+<nav class="rail" aria-label="Contents">
+  <details id="toc" open>
+    <summary class="label"><span>Contents</span><span class="here" id="here"></span></summary>
+    <ol class="route">
+      <li><a href="#top"><span class="t">What skills are</span></a></li>
+      <li><a href="#quick-install"><span class="t">Quick install</span></a></li>
+      <li class="major l1"><a href="#impeccable"><span class="t">1 Impeccable</span><small>design vocabulary</small></a></li>
+      <li class="major l2"><a href="#karpathy"><span class="t">2 Karpathy Guidelines</span><small>coding discipline</small></a></li>
+      <li class="major l3"><a href="#superpowers"><span class="t">3 Superpowers</span><small>engineering workflow</small></a></li>
+      <li class="major l4"><a href="#taste"><span class="t">4 Taste Skill</span><small>frontend direction</small></a></li>
+      <li class="major l5"><a href="#trail-of-bits"><span class="t">5 Trail of Bits Skills</span><small>security review</small></a></li>
+      <li><a href="#stack"><span class="t">How they stack</span></a></li>
+      <li><a href="#before-you-install"><span class="t">Before you install</span></a></li>
+    </ol>
+  </details>
+</nav>
+
+<main>
+<section id="top">
+  <h1>Skills I Use</h1>
+  <p class="lead prose">Five Claude Code skills, how to install each, what each is good for, and one prompt that shows it working.</p>
+  <p class="lead prose">A skill is a folder of instructions and scripts that Claude Code loads when a task calls for it. Personal skills live in <code>~/.claude/skills/</code>, project skills in <code>.claude/skills/</code>, and skills that ship as plugins are managed with <code>/plugin</code>.</p>
+</section>
+
+<section id="quick-install" class="plain">
+  <h2>Quick install</h2>
+  <p class="prose">The main route for each skill comes first, then alternatives and setup. Skills can run code on your machine, so <a href="#before-you-install">read this before installing</a>.</p>
+  <div class="tt">
+    <div class="tt-head label" aria-hidden="true"><span>Line</span><div class="cols"><span>Step</span><span>Command</span><span>Run in</span><span></span></div></div>
+
+    <div class="qi l1">
+      <div class="who"><span class="disc" aria-hidden="true">1</span><a href="#impeccable">Impeccable</a></div>
+      <ul class="cmds">
+        <li class="cmd"><span class="step label">CLI</span><code>npx impeccable install</code><span class="env">Shell</span><button class="copy" type="button">Copy</button></li>
+      </ul>
+    </div>
+    <div class="qi l2">
+      <div class="who"><span class="disc" aria-hidden="true">2</span><a href="#karpathy">Karpathy Guidelines</a></div>
+      <ul class="cmds">
+        <li class="cmd"><span class="step label">Plugin 1</span><code>/plugin marketplace add forrestchang/andrej-karpathy-skills</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+        <li class="cmd"><span class="step label">Plugin 2</span><code>/plugin install andrej-karpathy-skills@karpathy-skills</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+      </ul>
+    </div>
+    <div class="qi l3">
+      <div class="who"><span class="disc" aria-hidden="true">3</span><a href="#superpowers">Superpowers</a></div>
+      <ul class="cmds">
+        <li class="cmd"><span class="step label">Official</span><code>/plugin install superpowers@claude-plugins-official</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+      </ul>
+    </div>
+    <div class="qi l4">
+      <div class="who"><span class="disc" aria-hidden="true">4</span><a href="#taste">Taste Skill</a></div>
+      <ul class="cmds">
+        <li class="cmd"><span class="step label">CLI</span><code>npx skills add https://github.com/Leonxlnx/taste-skill <span class="nb">--skill</span> "design-taste-frontend"</code><span class="env">Shell</span><button class="copy" type="button">Copy</button></li>
+      </ul>
+    </div>
+    <div class="qi l5">
+      <div class="who"><span class="disc" aria-hidden="true">5</span><a href="#trail-of-bits">Trail of Bits Skills</a></div>
+      <ul class="cmds">
+        <li class="cmd"><span class="step label">Step 1</span><code>/plugin marketplace add trailofbits/skills</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+        <li class="cmd"><span class="step label">Step 2</span><code>/plugin menu</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+      </ul>
+    </div>
+
+    <h3 class="tt-sub">Other routes, setup and updates</h3>
+    <div class="qi l1">
+      <div class="who"><span class="disc" aria-hidden="true">1</span><a href="#impeccable">Impeccable</a></div>
+      <ul class="cmds">
+        <li class="cmd"><span class="step label">Plugin 1</span><code>/plugin marketplace add pbakaus/impeccable</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+        <li class="cmd"><span class="step label">Plugin 2</span><code>/plugin<span class="hint">choose Discover, then Impeccable</span></code><span class="env">Claude Code</span><button class="copy" type="button" data-text="/plugin">Copy</button></li>
+        <li class="cmd"><span class="step label">Setup</span><code>/impeccable init</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+        <li class="cmd"><span class="step label">Setup</span><code>/impeccable hooks on</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+        <li class="cmd"><span class="step label">Update</span><code>npx impeccable update</code><span class="env">Shell</span><button class="copy" type="button">Copy</button></li>
+      </ul>
+    </div>
+    <div class="qi l2">
+      <div class="who"><span class="disc" aria-hidden="true">2</span><a href="#karpathy">Karpathy Guidelines</a></div>
+      <ul class="cmds">
+        <li class="cmd"><span class="step label">File</span><code>curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md<span class="hint">Replaces any existing CLAUDE.md. Use Append if you have one.</span></code><span class="env">Shell</span><button class="copy" type="button" data-text="curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md">Copy</button></li>
+        <li class="cmd"><span class="step label">Append</span><code>echo "" &gt;&gt; CLAUDE.md
+curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md &gt;&gt; CLAUDE.md</code><span class="env">Shell</span><button class="copy" type="button">Copy</button></li>
+      </ul>
+    </div>
+    <div class="qi l3">
+      <div class="who"><span class="disc" aria-hidden="true">3</span><a href="#superpowers">Superpowers</a></div>
+      <ul class="cmds">
+        <li class="cmd"><span class="step label">Author 1</span><code>/plugin marketplace add obra/superpowers-marketplace</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+        <li class="cmd"><span class="step label">Author 2</span><code>/plugin install superpowers@superpowers-marketplace</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+      </ul>
+    </div>
+    <div class="qi l4">
+      <div class="who"><span class="disc" aria-hidden="true">4</span><a href="#taste">Taste Skill</a></div>
+      <ul class="cmds">
+        <li class="cmd"><span class="step label">Plugin 1</span><code>/plugin marketplace add Leonxlnx/taste-skill</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+        <li class="cmd"><span class="step label">Plugin 2</span><code>/plugin install taste-skill@taste-skill</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+        <li class="cmd"><span class="step label">Classic</span><code>npx skills add https://github.com/Leonxlnx/taste-skill-classics <span class="nb">--skill</span> "high-end-visual-design"</code><span class="env">Shell</span><button class="copy" type="button">Copy</button></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 1 -->
+<section id="impeccable" class="line l1">
+  <div class="opener"><span class="disc" aria-hidden="true">1</span><h2>Impeccable</h2><a class="src" href="https://impeccable.style">impeccable.style</a></div>
+  <p class="pitch">Gives the agent a designer's vocabulary and a set of anti-pattern filters, so the UI it produces reflects decisions instead of defaults.</p>
+
+  <h3>Install</h3>
+  <ul class="cmds">
+    <li class="cmd"><span class="step label">CLI</span><code>npx impeccable install</code><span class="env">Shell</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Plugin 1</span><code>/plugin marketplace add pbakaus/impeccable</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Plugin 2</span><code>/plugin<span class="hint">choose Discover, then Impeccable</span></code><span class="env">Claude Code</span><button class="copy" type="button" data-text="/plugin">Copy</button></li>
+    <li class="cmd"><span class="step label">Setup</span><code>/impeccable init</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Setup</span><code>/impeccable hooks on</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Update</span><code>npx impeccable update</code><span class="env">Shell</span><button class="copy" type="button">Copy</button></li>
+  </ul>
+  <p class="note">Reload Claude Code after installing. <code>init</code> interviews you once and writes <code>PRODUCT.md</code>. <code>hooks on</code> runs a detector on UI files after each edit.</p>
+
+  <h3>Good for</h3>
+  <ul class="benefits">
+    <li><b>One kind of change at a time.</b> Each command names a design job, so you can ask for typography or layout without reopening everything else.</li>
+    <li><b>Stated context.</b> Later commands read who the product is for from <code>PRODUCT.md</code> instead of guessing.</li>
+    <li><b>Review before rework.</b> <code>critique</code> scores a page against UX heuristics. <code>audit</code> checks accessibility, performance and responsive behaviour.</li>
+    <li><b>Checks while you edit.</b> With hooks on, problems such as low-contrast text are reported right after the file is written.</li>
+  </ul>
+
+  <h3>Commands by group</h3>
+  <table>
+    <thead><tr><th scope="col">Group</th><th scope="col">Commands</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Create</th><td><code>shape</code></td></tr>
+      <tr><th scope="row">Evaluate</th><td><code>critique</code> <code>audit</code></td></tr>
+      <tr><th scope="row">Refine</th><td><code>typeset</code> <code>layout</code> <code>colorize</code> <code>animate</code> <code>delight</code> <code>bolder</code> <code>quieter</code> <code>overdrive</code></td></tr>
+      <tr><th scope="row">Simplify</th><td><code>distill</code> <code>clarify</code> <code>adapt</code></td></tr>
+      <tr><th scope="row">Harden</th><td><code>polish</code> <code>optimize</code> <code>harden</code> <code>onboard</code></td></tr>
+      <tr><th scope="row">System</th><td><code>init</code> <code>extract</code> <code>document</code> <code>live</code> <code>generate</code></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Example</h3>
+  <div class="example">
+    <div class="prompt"><code>/impeccable critique the pricing page</code><button class="copy" type="button">Copy</button></div>
+    <div class="happens">
+      <span class="label">What happens</span>
+      <p>In a Next.js app it finds <code>app/pricing/page.tsx</code> and the components it renders, then reviews the page as a designer would. You get scores per heuristic and a prioritised list: for example, three plans with equal visual weight so no plan reads as the recommended one, or a comparison table that hides the differences people choose on. Nothing is changed yet. Follow up with <code>/impeccable layout</code> or <code>/impeccable polish</code> on the items you agree with.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section id="karpathy" class="line l2">
+  <div class="opener"><span class="disc" aria-hidden="true">2</span><h2>Karpathy Guidelines</h2><a class="src" href="https://github.com/multica-ai/andrej-karpathy-skills">github.com/multica-ai/andrej-karpathy-skills</a></div>
+  <p class="pitch">Four working rules, drawn from Andrej Karpathy's observations on how LLMs get coding wrong, that keep the agent from guessing, over-building and wandering.</p>
+
+  <h3>Install</h3>
+  <ul class="cmds">
+    <li class="cmd"><span class="step label">Plugin 1</span><code>/plugin marketplace add forrestchang/andrej-karpathy-skills</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Plugin 2</span><code>/plugin install andrej-karpathy-skills@karpathy-skills</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">File</span><code>curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md<span class="hint">Replaces any existing CLAUDE.md. Use Append if you have one.</span></code><span class="env">Shell</span><button class="copy" type="button" data-text="curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md">Copy</button></li>
+    <li class="cmd"><span class="step label">Append</span><code>echo "" &gt;&gt; CLAUDE.md
+curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md &gt;&gt; CLAUDE.md</code><span class="env">Shell</span><button class="copy" type="button">Copy</button></li>
+  </ul>
+  <p class="note">Pick one route. The plugin applies across all projects. The <code>curl</code> route writes the same rules into one project's <code>CLAUDE.md</code>; use the append form if the file already exists. The repository now lives under <code>multica-ai</code>. Its README still uses the <code>forrestchang</code> path, which GitHub redirects.</p>
+
+  <h3>Good for</h3>
+  <ul class="benefits">
+    <li><b>Wrong guesses surface early.</b> Assumptions are written down before the code, so you correct a sentence and not a diff.</li>
+    <li><b>Smaller diffs.</b> No speculative abstractions, no options nobody asked for.</li>
+    <li><b>Changes stay in scope.</b> Neighbouring code, comments and formatting are left alone. Unrelated dead code gets mentioned, not deleted.</li>
+    <li><b>Done means checked.</b> Work is tied to something that can pass or fail, often a test written first.</li>
+  </ul>
+
+  <h3>The four principles</h3>
+  <table>
+    <thead><tr><th scope="col">Principle</th><th scope="col">In practice</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Think before coding</th><td>State assumptions, surface tradeoffs, ask when the request is unclear.</td></tr>
+      <tr><th scope="row">Simplicity first</th><td>Write the minimum code that solves the problem. Nothing speculative.</td></tr>
+      <tr><th scope="row">Surgical changes</th><td>Touch only what the task needs and match the existing style.</td></tr>
+      <tr><th scope="row">Goal-driven execution</th><td>Define a verifiable goal, write the failing test first, iterate until it passes.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Example</h3>
+  <div class="example">
+    <div class="prompt"><code>Orders with a 100% discount code return a 500 from OrderSerializer.validate. Fix it, failing test first.</code><button class="copy" type="button">Copy</button></div>
+    <div class="happens">
+      <span class="label">What happens</span>
+      <p>In a Django REST project it reads the serializer and states what it believes the cause is before editing. If it is unclear whether a zero total should be allowed, it asks. It then adds one failing test to the existing orders test module, makes the smallest change in <code>validate</code> that turns it green, and reports the result. It does not reformat the file or refactor the discount model along the way.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section id="superpowers" class="line l3">
+  <div class="opener"><span class="disc" aria-hidden="true">3</span><h2>Superpowers</h2><a class="src" href="https://github.com/obra/superpowers">github.com/obra/superpowers</a></div>
+  <p class="pitch">A full engineering workflow for the agent: clarify, plan, test first, review, finish. It replaces jumping straight to code.</p>
+
+  <h3>Install</h3>
+  <ul class="cmds">
+    <li class="cmd"><span class="step label">Official</span><code>/plugin install superpowers@claude-plugins-official</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Author 1</span><code>/plugin marketplace add obra/superpowers-marketplace</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Author 2</span><code>/plugin install superpowers@superpowers-marketplace</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+  </ul>
+  <p class="note">Official uses Anthropic's marketplace. Author 1 and 2 install the same plugin from the author's own marketplace. Pick one route.</p>
+
+  <h3>Good for</h3>
+  <ul class="benefits">
+    <li><b>Questions before code.</b> Brainstorming asks what you want and shows a design to confirm.</li>
+    <li><b>Plans you can read.</b> Work is split into small tasks, each with file paths and a verification step.</li>
+    <li><b>Tests first.</b> A failing test comes before the code that makes it pass.</li>
+    <li><b>Isolated work.</b> Changes happen in a git worktree, with a review between tasks. Critical issues block progress.</li>
+    <li><b>A clean ending.</b> The finish step checks the tests, then offers merge, pull request, keep or discard.</li>
+  </ul>
+
+  <h3>Key skills</h3>
+  <table>
+    <thead><tr><th scope="col">Skill</th><th scope="col">What it does</th></tr></thead>
+    <tbody>
+      <tr><th scope="row"><code>brainstorming</code></th><td>Asks what you want and presents a design for approval.</td></tr>
+      <tr><th scope="row"><code>using-git-worktrees</code></th><td>Creates an isolated branch and checks the tests pass before any change.</td></tr>
+      <tr><th scope="row"><code>writing-plans</code></th><td>Breaks the design into small tasks with paths, code and checks.</td></tr>
+      <tr><th scope="row"><code>executing-plans</code></th><td>Carries out the plan inline in one session, with a final review.</td></tr>
+      <tr><th scope="row"><code>subagent-driven-development</code></th><td>Carries out the plan with a fresh subagent per task and a review after each.</td></tr>
+      <tr><th scope="row"><code>test-driven-development</code></th><td>Failing test first, then the minimal code to pass it.</td></tr>
+      <tr><th scope="row"><code>systematic-debugging</code></th><td>Finds the root cause before proposing a fix.</td></tr>
+      <tr><th scope="row"><code>verification-before-completion</code></th><td>Runs the checks before claiming the work is done.</td></tr>
+      <tr><th scope="row"><code>requesting-code-review</code></th><td>Reviews the work against the plan between tasks.</td></tr>
+      <tr><th scope="row"><code>finishing-a-development-branch</code></th><td>Verifies tests, offers merge or pull request, cleans up the worktree.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Example</h3>
+  <div class="example">
+    <div class="prompt"><code>Add team invitations to this Laravel app. An owner invites by email, the invite expires after 7 days, and accepting it joins the team.</code><button class="copy" type="button">Copy</button></div>
+    <div class="happens">
+      <span class="label">What happens</span>
+      <ol>
+        <li>Brainstorming starts before any code. Expect questions such as what happens when the email already has an account, and whether invites can be resent.</li>
+        <li>You approve a short design. It creates a worktree and confirms the existing tests pass.</li>
+        <li>The plan lists tasks: migration, <code>Invitation</code> model, mailable, controller, policy. Each one is built with a failing feature test first.</li>
+        <li>A review runs between tasks. At the end it verifies the suite and offers a merge or a pull request.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section id="taste" class="line l4">
+  <div class="opener"><span class="disc" aria-hidden="true">4</span><h2>Taste Skill</h2><a class="src" href="https://github.com/Leonxlnx/taste-skill">github.com/Leonxlnx/taste-skill</a></div>
+  <p class="pitch">Anti-slop rules for frontend work: one consistent design system, real imagery, and a browser check before the agent calls a page done.</p>
+
+  <h3>Install</h3>
+  <ul class="cmds">
+    <li class="cmd"><span class="step label">CLI</span><code>npx skills add https://github.com/Leonxlnx/taste-skill <span class="nb">--skill</span> "design-taste-frontend"</code><span class="env">Shell</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Plugin 1</span><code>/plugin marketplace add Leonxlnx/taste-skill</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Plugin 2</span><code>/plugin install taste-skill@taste-skill</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Classic</span><code>npx skills add https://github.com/Leonxlnx/taste-skill-classics <span class="nb">--skill</span> "high-end-visual-design"</code><span class="env">Shell</span><button class="copy" type="button">Copy</button></li>
+  </ul>
+  <p class="note">The main repository now holds one skill, <code>design-taste-frontend</code>. The older style skills, including <code>high-end-visual-design</code>, <code>minimalist-ui</code> and <code>industrial-brutalist-ui</code>, moved to <a href="https://github.com/Leonxlnx/taste-skill-classics">Leonxlnx/taste-skill-classics</a> and kept their install names. The last row shows how to install one of them.</p>
+
+  <h3>Good for</h3>
+  <ul class="benefits">
+    <li><b>A direction up front.</b> The agent commits to one design system and applies it across the page.</li>
+    <li><b>Real material.</b> It calls for real photography and brand icons where a placeholder would otherwise go.</li>
+    <li><b>Redesigns that start by looking.</b> An existing page is audited in a real browser before anything changes.</li>
+    <li><b>A checker with a verdict.</b> <code>scripts/consistency.mjs</code> renders the page in headless Chrome at 1440, 1024, 820, 768 and 390 pixels and prints PASS, WARN or FAIL per rule.</li>
+    <li><b>Pairs with Impeccable.</b> Taste sets the direction. Impeccable refines and audits the result.</li>
+  </ul>
+
+  <h3>Example</h3>
+  <div class="example">
+    <div class="prompt"><code>Redesign the marketing homepage in app/(marketing)/page.tsx. Audit the current page in the browser first. Keep the copy and our Tailwind tokens.</code><button class="copy" type="button">Copy</button></div>
+    <div class="happens">
+      <span class="label">What happens</span>
+      <ol>
+        <li>It loads the running Next.js page in headless Chrome and reports what is inconsistent today: spacing, type sizes, mixed icon styles.</li>
+        <li>It proposes one direction and rebuilds the page inside your existing tokens.</li>
+        <li>It reruns the checker at all five widths and fixes what fails.</li>
+        <li>From here, <code>/impeccable audit</code> is a good second opinion on accessibility and responsive behaviour.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section id="trail-of-bits" class="line l5">
+  <div class="opener"><span class="disc" aria-hidden="true">5</span><h2>Trail of Bits Skills</h2><a class="src" href="https://github.com/trailofbits/skills">github.com/trailofbits/skills</a></div>
+  <p class="pitch">Security review skills written by a professional audit firm, run from inside Claude Code.</p>
+
+  <h3>Install</h3>
+  <ul class="cmds">
+    <li class="cmd"><span class="step label">Step 1</span><code>/plugin marketplace add trailofbits/skills</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+    <li class="cmd"><span class="step label">Step 2</span><code>/plugin menu</code><span class="env">Claude Code</span><button class="copy" type="button">Copy</button></li>
+  </ul>
+  <p class="note">The marketplace is a collection. Use the menu to pick only the plugins you need.</p>
+
+  <h3>Good for</h3>
+  <ul class="benefits">
+    <li><b>Diff review with history.</b> Changes are read the way an auditor reads them, using git history for context.</li>
+    <li><b>Fail-open defaults.</b> Settings that quietly turn protection off are found, and a verifier tries to refute each finding.</li>
+    <li><b>Dependency risk beyond CVEs.</b> Abandoned upstreams and install scripts are flagged alongside matched advisories.</li>
+    <li><b>One bug becomes a search.</b> Variant analysis looks for the same mistake elsewhere in the codebase.</li>
+  </ul>
+
+  <h3>Plugins for web and backend work</h3>
+  <table>
+    <thead><tr><th scope="col">Plugin</th><th scope="col">What it does</th></tr></thead>
+    <tbody>
+      <tr><th scope="row"><code>differential-review</code></th><td>Security-focused review of code changes, using git history.</td></tr>
+      <tr><th scope="row"><code>insecure-defaults</code></th><td>Parallel audit for fail-open defaults, with a refuting verifier per file.</td></tr>
+      <tr><th scope="row"><code>sharp-edges</code></th><td>Flags error-prone APIs, dangerous configurations and footgun designs.</td></tr>
+      <tr><th scope="row"><code>supply-chain-risk-auditor</code></th><td>Audits npm, PyPI and Go dependencies for advisories, abandoned upstreams and install scripts.</td></tr>
+      <tr><th scope="row"><code>static-analysis</code></th><td>Semgrep and CodeQL, plus SARIF parsing.</td></tr>
+      <tr><th scope="row"><code>variant-analysis</code></th><td>Finds similar vulnerabilities across a codebase by pattern.</td></tr>
+      <tr><th scope="row"><code>property-based-testing</code></th><td>Writes and reviews property tests for Hypothesis, fast-check and proptest.</td></tr>
+      <tr><th scope="row"><code>modern-python</code></th><td>Current Python tooling and practice with uv, ruff and pytest.</td></tr>
+    </tbody>
+  </table>
+  <p class="note">The collection also covers smart contracts, reverse engineering, and C, C++ and Rust review.</p>
+
+  <h3>Example</h3>
+  <div class="example">
+    <div class="prompt"><code>Audit this checkout API diff for insecure defaults: git diff main...feature/checkout-api</code><button class="copy" type="button">Copy</button></div>
+    <div class="happens">
+      <span class="label">What happens</span>
+      <p>With <code>insecure-defaults</code> installed, it reads the changed files in a Django project and looks for places where a missing value turns a protection off: a payment webhook that skips signature checks when the secret is unset, a <code>SECRET_KEY</code> with a hard-coded fallback, <code>DEBUG</code> that defaults to true. A verifier then tries to refute each finding. What survives comes back with file, line and a suggested fix.</p>
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="plain">
+  <h2>How they stack</h2>
+  <p class="prose">The five do not compete. Two shape how code gets written, two shape how the UI looks, and one checks what ships.</p>
+  <figure class="net">
+    <svg class="wide" viewBox="0 0 900 232" role="img" aria-labelledby="net-t net-d">
+      <title id="net-t">How the five skills stack</title>
+      <desc id="net-d">A route from task to shipped with three stops. Superpowers and Karpathy Guidelines serve the first stop, write the code. Taste Skill and Impeccable serve the second, shape the UI. Trail of Bits Skills serves the third, check what ships.</desc>
+      <path class="trunk" d="M40 110H860"/>
+      <circle class="stn" cx="40" cy="110" r="7"/><circle cx="860" cy="110" r="8" fill="var(--ink)"/>
+      <text class="tm" x="40" y="84" text-anchor="middle">Task</text><text class="tm" x="860" y="84" text-anchor="end">Shipped</text>
+      <path class="seg" stroke="var(--l3)" d="M70 110C92 110 88 98 110 98H280C302 98 298 110 320 110"/><path class="seg" stroke="var(--l2)" d="M70 110C92 110 88 122 110 122H280C302 122 298 110 320 110"/>
+      <rect class="stn" x="184" y="84" width="22" height="52" rx="11"/>
+      <path class="seg" stroke="var(--l4)" d="M330 110C352 110 348 98 370 98H540C562 98 558 110 580 110"/><path class="seg" stroke="var(--l1)" d="M330 110C352 110 348 122 370 122H540C562 122 558 110 580 110"/>
+      <rect class="stn" x="444" y="84" width="22" height="52" rx="11"/>
+      <path class="seg" stroke="var(--l5)" d="M590 110H820"/>
+      <rect class="stn" x="699" y="97" width="22" height="26" rx="11"/>
+      <text class="st" x="195" y="56" text-anchor="middle">Write the code</text>
+      <text class="st" x="455" y="56" text-anchor="middle">Shape the UI</text>
+      <text class="st" x="710" y="56" text-anchor="middle">Check what ships</text>
+      <g class="ln">
+        <circle cx="100" cy="172" r="10" fill="var(--l3)"/><text class="dn" x="100" y="176" text-anchor="middle" style="fill:var(--on3)">3</text><text x="118" y="177">Superpowers</text>
+        <circle cx="100" cy="202" r="10" fill="var(--l2)"/><text class="dn" x="100" y="206" text-anchor="middle" style="fill:var(--on2)">2</text><text x="118" y="207">Karpathy Guidelines</text>
+        <circle cx="360" cy="172" r="10" fill="var(--l4)"/><text class="dn" x="360" y="176" text-anchor="middle" style="fill:var(--on4)">4</text><text x="378" y="177">Taste Skill</text>
+        <circle cx="360" cy="202" r="10" fill="var(--l1)"/><text class="dn" x="360" y="206" text-anchor="middle" style="fill:var(--on1)">1</text><text x="378" y="207">Impeccable</text>
+        <circle cx="620" cy="172" r="10" fill="var(--l5)"/><text class="dn" x="620" y="176" text-anchor="middle" style="fill:var(--on5)">5</text><text x="638" y="177">Trail of Bits Skills</text>
+      </g>
+    </svg>
+    <svg class="tall" viewBox="0 0 340 430" role="img" aria-labelledby="net2-t">
+      <title id="net2-t">How the five skills stack: write the code with Superpowers and Karpathy Guidelines, shape the UI with Taste Skill and Impeccable, check what ships with Trail of Bits Skills.</title>
+      <path class="trunk" d="M40 34V400"/>
+      <circle class="stn" cx="40" cy="34" r="7"/><circle cx="40" cy="400" r="8" fill="var(--ink)"/>
+      <text class="tm" x="62" y="38">Task</text><text class="tm" x="62" y="404">Shipped</text>
+      <path class="seg" stroke="var(--l3)" d="M40 62C40 76 28 74 28 88V132C28 146 40 144 40 158"/><path class="seg" stroke="var(--l2)" d="M40 62C40 76 52 74 52 88V132C52 146 40 144 40 158"/>
+      <rect class="stn" x="14" y="99" width="52" height="22" rx="11"/>
+      <path class="seg" stroke="var(--l4)" d="M40 178C40 192 28 190 28 204V248C28 262 40 260 40 274"/><path class="seg" stroke="var(--l1)" d="M40 178C40 192 52 190 52 204V248C52 262 40 260 40 274"/>
+      <rect class="stn" x="14" y="215" width="52" height="22" rx="11"/>
+      <path class="seg" stroke="var(--l5)" d="M40 296V368"/>
+      <rect class="stn" x="27" y="321" width="26" height="22" rx="11"/>
+      <text class="st" x="88" y="93">Write the code</text>
+      <text class="st" x="88" y="209">Shape the UI</text>
+      <text class="st" x="88" y="325">Check what ships</text>
+      <g class="ln">
+        <circle cx="98" cy="116" r="10" fill="var(--l3)"/><text class="dn" x="98" y="120" text-anchor="middle" style="fill:var(--on3)">3</text><text x="116" y="121">Superpowers</text>
+        <circle cx="98" cy="142" r="10" fill="var(--l2)"/><text class="dn" x="98" y="146" text-anchor="middle" style="fill:var(--on2)">2</text><text x="116" y="147">Karpathy Guidelines</text>
+        <circle cx="98" cy="232" r="10" fill="var(--l4)"/><text class="dn" x="98" y="236" text-anchor="middle" style="fill:var(--on4)">4</text><text x="116" y="237">Taste Skill</text>
+        <circle cx="98" cy="258" r="10" fill="var(--l1)"/><text class="dn" x="98" y="262" text-anchor="middle" style="fill:var(--on1)">1</text><text x="116" y="263">Impeccable</text>
+        <circle cx="98" cy="348" r="10" fill="var(--l5)"/><text class="dn" x="98" y="352" text-anchor="middle" style="fill:var(--on5)">5</text><text x="116" y="353">Trail of Bits Skills</text>
+      </g>
+    </svg>
+  </figure>
+  <ol class="stages">
+    <li><b>Write the code</b>Superpowers supplies the process: clarify, plan, test first, review. Karpathy Guidelines supplies the restraint inside each step: small diffs, stated assumptions.</li>
+    <li><b>Shape the UI</b>Taste Skill sets the direction and checks it in a browser. Impeccable then critiques, refines and audits what was built.</li>
+    <li><b>Check what ships</b>Trail of Bits Skills reviews the diff, the defaults and the dependencies before the branch merges.</li>
+  </ol>
+</section>
+
+<section id="before-you-install" class="notice">
+  <h2>Before you install</h2>
+  <p class="prose">A skill is not only text. It can ship scripts, and a plugin can add hooks that run on their own. All of it runs with your permissions, on your machine, inside your repositories.</p>
+  <ul>
+    <li>Read the skill's <code>SKILL.md</code> and every script it ships before installing it.</li>
+    <li>For plugins, check which hooks and MCP servers they register.</li>
+    <li>Read the changes again when you update. An update is new code.</li>
+    <li>Try a new skill in one project's <code>.claude/skills/</code> before installing it globally.</li>
+  </ul>
+</section>
+
+<footer role="contentinfo">
+  <p>Commands were checked against each project's README or site on 11 November 2026. If a command here disagrees with the source, the source is right.</p>
+  <ul>
+    <li><a href="https://impeccable.style">Impeccable</a></li>
+    <li><a href="https://github.com/multica-ai/andrej-karpathy-skills">Karpathy Guidelines</a></li>
+    <li><a href="https://github.com/obra/superpowers">Superpowers</a></li>
+    <li><a href="https://github.com/Leonxlnx/taste-skill">Taste Skill</a></li>
+    <li><a href="https://github.com/trailofbits/skills">Trail of Bits Skills</a></li>
+  </ul>
+</footer>
+</main>
+</div>
+
+<div class="vh" id="live" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var root=document.documentElement, live=document.getElementById('live');
+
+  /* Theme */
+  var tb=document.getElementById('theme'), mqDark=matchMedia('(prefers-color-scheme: dark)');
+  function isDark(){var t=root.getAttribute('data-theme');return t?t==='dark':mqDark.matches}
+  function paint(){var d=isDark();tb.textContent=d?'Light':'Dark';tb.setAttribute('aria-label','Switch to '+(d?'light':'dark')+' theme')}
+  tb.hidden=false;paint();
+  tb.addEventListener('click',function(){var n=isDark()?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}paint()});
+  mqDark.addEventListener('change',paint);
+
+  /* Copy */
+  function textOf(b){
+    if(b.dataset.text)return b.dataset.text;
+    var c=b.parentNode.querySelector('code');return c?c.textContent.trim():'';
+  }
+  function fallback(t){var f=document.activeElement,a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();var ok=false;try{ok=document.execCommand('copy')}catch(e){}a.remove();if(f&&f.focus)f.focus();return ok}
+  function selectCode(b){var c=b.parentNode.querySelector('code'),g=getSelection();if(!c||!g)return;var r=document.createRange();r.selectNodeContents(c);g.removeAllRanges();g.addRange(r)}
+  document.querySelectorAll('.copy').forEach(function(b){
+    var t=textOf(b);b.setAttribute('aria-label','Copy: '+t);
+    b.addEventListener('click',function(){
+      function done(ok){
+        b.textContent=ok?'Copied':'Selected';if(ok)b.dataset.done='';else selectCode(b);
+        live.textContent=ok?'Copied to clipboard':'Copy failed. The command is selected, so press Control or Command and C.';live._o=b;
+        clearTimeout(b._t);b._t=setTimeout(function(){b.textContent='Copy';delete b.dataset.done;if(live._o===b)live.textContent=''},ok?1600:4000);
+      }
+      if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(function(){done(true)},function(){done(fallback(t))})}
+      else done(fallback(t));
+    });
+  });
+
+  /* Contents: always open on desktop, collapsible on small screens */
+  var toc=document.getElementById('toc'), sum=toc.querySelector('summary'), mqWide=matchMedia('(min-width: 961px)');
+  function syncToc(){toc.open=mqWide.matches;if(mqWide.matches)sum.setAttribute('tabindex','-1');else sum.removeAttribute('tabindex')}
+  syncToc();mqWide.addEventListener('change',syncToc);
+  sum.addEventListener('click',function(e){if(mqWide.matches)e.preventDefault()});
+  var links=[].slice.call(toc.querySelectorAll('a'));
+  links.forEach(function(a){a.addEventListener('click',function(){if(!mqWide.matches)toc.open=false})});
+
+  /* Current stop */
+  var secs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+  var ticking=false, here=document.getElementById('here');
+  function spy(){
+    ticking=false;var y=window.scrollY+window.innerHeight*0.3, cur=0;
+    for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].getBoundingClientRect().top+window.scrollY<=y)cur=i}
+    if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4)cur=secs.length-1;
+    links.forEach(function(a,i){if(i===cur)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')});
+    here.textContent=links[cur].querySelector('.t').textContent;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(spy)}},{passive:true});
+  window.addEventListener('resize',spy);spy();
+})();
+</script>
+</body>
+</html>

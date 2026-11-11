@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Line Timetable</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:#f5f5f0;color:#15181b;font:16px/1.55 Archivo,system-ui,sans-serif}
+.mast{height:56px;border-bottom:2px solid #15181b;display:flex;align-items:center;padding:0 48px;gap:24px;font-stretch:75%;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:13px}
+.mast .bands{display:flex;gap:3px;margin-right:8px}.mast .bands i{width:10px;height:26px;display:block}
+.mast span:last-child{margin-left:auto;font-weight:500}
+.wrap{display:grid;grid-template-columns:300px 1fr;height:844px}
+nav{padding:44px 0 0 48px;border-right:1px solid #c9c9c0}
+nav h2{font-size:12px;font-stretch:75%;letter-spacing:.1em;text-transform:uppercase;margin-bottom:22px;color:#55595e}
+.line{position:relative;padding-left:34px}
+.line:before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:4px;background:#15181b}
+.stop{position:relative;height:46px;font-weight:600;font-size:15px}
+.stop:before{content:"";position:absolute;left:-32px;top:3px;width:14px;height:14px;border-radius:50%;background:#f5f5f0;border:4px solid var(--c,#15181b)}
+.stop small{display:block;font-weight:400;font-size:12px;color:#55595e;font-stretch:85%}
+.stop.minor{height:34px;font-weight:400;font-size:14px}.stop.minor:before{width:8px;height:8px;left:-29px;top:6px;border-width:3px}
+main{padding:44px 72px 0 72px;position:relative}
+.kick{font-stretch:75%;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#55595e}
+h1{font-size:76px;line-height:.95;font-weight:800;font-stretch:70%;letter-spacing:-.01em;margin:10px 0 18px}
+p.lead{max-width:640px;font-size:17px}
+p.lead code{font:14px JetBrains Mono,monospace;background:#e8e8e0;padding:1px 5px}
+.tt{margin-top:34px;border-top:2px solid #15181b;max-width:960px}
+.tt .head{display:grid;grid-template-columns:44px 190px 1fr 70px;font-stretch:75%;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:8px 0;border-bottom:1px solid #15181b}
+.row{display:grid;grid-template-columns:44px 190px 1fr 70px;align-items:center;border-bottom:1px solid #c9c9c0;height:50px}
+.row b{display:block;width:26px;height:26px;border-radius:50%;background:var(--c);color:#fff;font-size:13px;text-align:center;line-height:26px}
+.row .n{font-weight:600}
+.row code{font:15px JetBrains Mono,monospace}
+.row .cp{font-stretch:75%;font-size:12px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #15181b;padding:3px 8px;justify-self:end}
+.open{position:absolute;left:72px;right:72px;bottom:0;height:86px;border-top:10px solid #d4351c;display:flex;align-items:baseline;gap:20px;padding-top:14px}
+.open .no{font-size:44px;font-weight:800;font-stretch:70%;line-height:1}
+.open .t{font-size:30px;font-weight:700;font-stretch:80%}
+.open .p{font-size:16px;color:#55595e}
+</style></head><body>
+<div class="mast"><span class="bands"><i style="background:#d4351c"></i><i style="background:#e0a800"></i><i style="background:#0b5cad"></i><i style="background:#1c7c54"></i><i style="background:#7b4a1e"></i></span><span>Skills I Use</span><span>Claude Code reference</span><span>Five lines, checked against source, November 2026</span></div>
+<div class="wrap">
+<nav><h2>Contents</h2><div class="line">
+<div class="stop minor">What skills are</div>
+<div class="stop minor">Quick install</div>
+<div class="stop" style="--c:#d4351c">1 Impeccable<small>design vocabulary</small></div>
+<div class="stop" style="--c:#e0a800">2 Karpathy Guidelines<small>coding discipline</small></div>
+<div class="stop" style="--c:#0b5cad">3 Superpowers<small>engineering workflow</small></div>
+<div class="stop" style="--c:#1c7c54">4 Taste Skill<small>frontend direction</small></div>
+<div class="stop" style="--c:#7b4a1e">5 Trail of Bits<small>security review</small></div>
+<div class="stop minor">How they stack</div>
+<div class="stop minor">Before you install</div>
+</div></nav>
+<main>
+<div class="kick">A working reference</div>
+<h1>Skills I Use</h1>
+<p class="lead">Five Claude Code skills, how to install each, what each is good for, and one prompt that shows it working. Skills install to <code>~/.claude/skills/</code> globally or <code>.claude/skills/</code> per project.</p>
+<div class="tt">
+<div class="head"><span>Line</span><span>Skill</span><span>Install command</span><span></span></div>
+<div class="row"><b style="--c:#d4351c">1</b><span class="n">Impeccable</span><code>npx impeccable install</code><span class="cp">Copy</span></div>
+<div class="row"><b style="--c:#e0a800;color:#15181b">2</b><span class="n">Karpathy Guidelines</span><code>/plugin marketplace add forrestchang/andrej-karpathy-skills</code><span class="cp">Copy</span></div>
+<div class="row"><b style="--c:#0b5cad">3</b><span class="n">Superpowers</span><code>/plugin install superpowers@claude-plugins-official</code><span class="cp">Copy</span></div>
+<div class="row"><b style="--c:#1c7c54">4</b><span class="n">Taste Skill</span><code>npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"</code><span class="cp">Copy</span></div>
+<div class="row"><b style="--c:#7b4a1e">5</b><span class="n">Trail of Bits</span><code>/plugin marketplace add trailofbits/skills</code><span class="cp">Copy</span></div>
+</div>
+<div class="open"><span class="no">1</span><span class="t">Impeccable</span><span class="p">A designer's vocabulary and anti-pattern filters for the agent.</span></div>
+</main></div>
+</body></html>

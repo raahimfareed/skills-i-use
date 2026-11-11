@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Swiss Grid Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:#fff;color:#0d0d0d;font:16px/1.5 "Hanken Grotesk",Helvetica,Arial,sans-serif}
+.g{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;padding:0 48px}
+.top{height:64px;align-items:center;border-bottom:4px solid #0d0d0d;font-size:14px;font-weight:700}
+.top span:nth-child(1){grid-column:1/5}.top span:nth-child(2){grid-column:5/9}.top span:nth-child(3){grid-column:9/13;font-weight:400}
+h1{grid-column:1/9;font-size:168px;line-height:.86;font-weight:800;letter-spacing:-.045em;margin-top:44px}
+.fig{grid-column:9/13;margin-top:44px;position:relative;height:290px}
+.fig .arc{position:absolute;right:0;top:0;width:290px;height:290px;border:44px solid #1242c9;border-radius:50%;clip-path:inset(0 0 50% 50%)}
+.fig .bar{position:absolute;left:0;bottom:0;height:22px;background:#0d0d0d}
+.intro{grid-column:1/6;margin-top:36px;font-size:18px}
+.intro code{font:15px JetBrains Mono,monospace;background:#e6e6e6;padding:0 4px}
+.toc{grid-column:9/13;margin-top:36px;font-size:15px}
+.toc div{display:flex;gap:16px;border-top:1px solid #0d0d0d;padding:6px 0;font-weight:500}
+.toc b{width:24px;font-weight:800}
+.q{grid-column:1/13;margin-top:40px;border-top:4px solid #0d0d0d}
+.r{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:center;height:46px;border-bottom:1px solid #0d0d0d}
+.r b{grid-column:1/2;font-size:22px;font-weight:800}
+.r span{grid-column:2/5;font-weight:700}
+.r code{grid-column:5/12;font:15px JetBrains Mono,monospace}
+.r i{grid-column:12/13;font-style:normal;font-size:13px;font-weight:700;color:#1242c9;justify-self:end}
+</style></head><body>
+<div class="g top"><span>Skills I Use</span><span>Claude Code, five skills</span><span>Checked against source, November 2026</span></div>
+<div class="g">
+<h1>Skills<br>I Use</h1>
+<div class="fig"><div class="arc"></div><div class="bar" style="width:60%"></div></div>
+<p class="intro">How to install each, what each is good for, and one prompt that shows it working. Skills install to <code>~/.claude/skills/</code> globally or <code>.claude/skills/</code> per project.</p>
+<div class="toc">
+<div><b>01</b>Impeccable</div><div><b>02</b>Karpathy Guidelines</div><div><b>03</b>Superpowers</div><div><b>04</b>Taste Skill</div><div><b>05</b>Trail of Bits Skills</div>
+</div>
+<div class="q">
+<div class="r"><b>01</b><span>Impeccable</span><code>npx impeccable install</code><i>Copy</i></div>
+<div class="r"><b>02</b><span>Karpathy Guidelines</span><code>/plugin marketplace add forrestchang/andrej-karpathy-skills</code><i>Copy</i></div>
+<div class="r"><b>03</b><span>Superpowers</span><code>/plugin install superpowers@claude-plugins-official</code><i>Copy</i></div>
+<div class="r"><b>04</b><span>Taste Skill</span><code>npx skills add https://github.com/Leonxlnx/taste-skill ...</code><i>Copy</i></div>
+<div class="r"><b>05</b><span>Trail of Bits Skills</span><code>/plugin marketplace add trailofbits/skills</code><i>Copy</i></div>
+</div>
+</div>
+</body></html>

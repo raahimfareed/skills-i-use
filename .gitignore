@@ -1,0 +1,9 @@
+# Impeccable local state: contains absolute paths and session IDs
+.impeccable/hook.cache.json
+.impeccable/questions/
+.impeccable/critique/
+
+# Local secrets and logs
+.env
+.env.*
+*.log

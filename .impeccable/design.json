@@ -1,0 +1,705 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T22:25:26Z",
+  "title": "Design System: Skills I Use",
+  "extensions": {
+    "colorMeta": {
+      "line-vermilion": {
+        "role": "primary",
+        "displayName": "Signal Vermilion",
+        "canonical": "#d4351c",
+        "cssVariable": "--l1",
+        "tonalRamp": [
+          "oklch(15.0% 0.052 31.7)",
+          "oklch(26.4% 0.092 31.7)",
+          "oklch(37.9% 0.132 31.7)",
+          "oklch(49.3% 0.171 31.7)",
+          "oklch(60.7% 0.187 31.7)",
+          "oklch(72.1% 0.148 31.7)",
+          "oklch(83.6% 0.108 31.7)",
+          "oklch(95.0% 0.068 31.7)"
+        ]
+      },
+      "line-amber": {
+        "role": "primary",
+        "displayName": "Timetable Amber",
+        "canonical": "#b08400",
+        "cssVariable": "--l2",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 84.9)",
+          "oklch(26.4% 0.054 84.9)",
+          "oklch(37.9% 0.078 84.9)",
+          "oklch(49.3% 0.101 84.9)",
+          "oklch(60.7% 0.124 84.9)",
+          "oklch(72.1% 0.114 84.9)",
+          "oklch(83.6% 0.091 84.9)",
+          "oklch(95.0% 0.067 84.9)"
+        ]
+      },
+      "line-blue": {
+        "role": "primary",
+        "displayName": "Route Blue",
+        "canonical": "#0b5cad",
+        "cssVariable": "--l3",
+        "tonalRamp": [
+          "oklch(15.0% 0.055 254.3)",
+          "oklch(26.4% 0.087 254.3)",
+          "oklch(37.9% 0.119 254.3)",
+          "oklch(49.3% 0.143 254.3)",
+          "oklch(60.7% 0.111 254.3)",
+          "oklch(72.1% 0.079 254.3)",
+          "oklch(83.6% 0.046 254.3)",
+          "oklch(95.0% 0.018 254.3)"
+        ]
+      },
+      "line-green": {
+        "role": "primary",
+        "displayName": "Junction Green",
+        "canonical": "#1c7c54",
+        "cssVariable": "--l4",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 160.3)",
+          "oklch(26.4% 0.054 160.3)",
+          "oklch(37.9% 0.078 160.3)",
+          "oklch(49.3% 0.101 160.3)",
+          "oklch(60.7% 0.090 160.3)",
+          "oklch(72.1% 0.066 160.3)",
+          "oklch(83.6% 0.043 160.3)",
+          "oklch(95.0% 0.019 160.3)"
+        ]
+      },
+      "line-brown": {
+        "role": "primary",
+        "displayName": "Ballast Brown",
+        "canonical": "#7b4a1e",
+        "cssVariable": "--l5",
+        "tonalRamp": [
+          "oklch(15.0% 0.038 59.4)",
+          "oklch(26.4% 0.057 59.4)",
+          "oklch(37.9% 0.075 59.4)",
+          "oklch(49.3% 0.083 59.4)",
+          "oklch(60.7% 0.064 59.4)",
+          "oklch(72.1% 0.045 59.4)",
+          "oklch(83.6% 0.027 59.4)",
+          "oklch(95.0% 0.011 59.4)"
+        ]
+      },
+      "on-line": {
+        "role": "neutral",
+        "displayName": "Numeral on Line",
+        "canonical": "#ffffff",
+        "cssVariable": "--on1, --on3, --on4, --on5",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.4% 0.000 89.9)",
+          "oklch(37.9% 0.000 89.9)",
+          "oklch(49.3% 0.000 89.9)",
+          "oklch(60.7% 0.000 89.9)",
+          "oklch(72.1% 0.000 89.9)",
+          "oklch(83.6% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      },
+      "on-line-amber": {
+        "role": "neutral",
+        "displayName": "Numeral on Amber",
+        "canonical": "#15181b",
+        "cssVariable": "--on2",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 248.2)",
+          "oklch(26.4% 0.007 248.2)",
+          "oklch(37.9% 0.006 248.2)",
+          "oklch(49.3% 0.005 248.2)",
+          "oklch(60.7% 0.004 248.2)",
+          "oklch(72.1% 0.003 248.2)",
+          "oklch(83.6% 0.002 248.2)",
+          "oklch(95.0% 0.001 248.2)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Timetable Stock",
+        "canonical": "#f1f3f4",
+        "cssVariable": "--paper",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 228.8)",
+          "oklch(26.4% 0.001 228.8)",
+          "oklch(37.9% 0.001 228.8)",
+          "oklch(49.3% 0.001 228.8)",
+          "oklch(60.7% 0.002 228.8)",
+          "oklch(72.1% 0.002 228.8)",
+          "oklch(83.6% 0.002 228.8)",
+          "oklch(95.0% 0.002 228.8)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Press Ink",
+        "canonical": "#15181b",
+        "cssVariable": "--ink",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 248.2)",
+          "oklch(26.4% 0.007 248.2)",
+          "oklch(37.9% 0.006 248.2)",
+          "oklch(49.3% 0.005 248.2)",
+          "oklch(60.7% 0.004 248.2)",
+          "oklch(72.1% 0.003 248.2)",
+          "oklch(83.6% 0.002 248.2)",
+          "oklch(95.0% 0.001 248.2)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Second Impression",
+        "canonical": "#4d5257",
+        "cssVariable": "--muted",
+        "tonalRamp": [
+          "oklch(15.0% 0.005 248.1)",
+          "oklch(26.4% 0.007 248.1)",
+          "oklch(37.9% 0.009 248.1)",
+          "oklch(49.3% 0.009 248.1)",
+          "oklch(60.7% 0.007 248.1)",
+          "oklch(72.1% 0.005 248.1)",
+          "oklch(83.6% 0.003 248.1)",
+          "oklch(95.0% 0.001 248.1)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#c2c7ca",
+        "cssVariable": "--rule",
+        "tonalRamp": [
+          "oklch(15.0% 0.001 233.7)",
+          "oklch(26.4% 0.002 233.7)",
+          "oklch(37.9% 0.003 233.7)",
+          "oklch(49.3% 0.004 233.7)",
+          "oklch(60.7% 0.005 233.7)",
+          "oklch(72.1% 0.006 233.7)",
+          "oklch(83.6% 0.007 233.7)",
+          "oklch(95.0% 0.006 233.7)"
+        ]
+      },
+      "code": {
+        "role": "neutral",
+        "displayName": "Code Tint",
+        "canonical": "#e3e7e9",
+        "cssVariable": "--code",
+        "tonalRamp": [
+          "oklch(15.0% 0.001 228.8)",
+          "oklch(26.4% 0.001 228.8)",
+          "oklch(37.9% 0.002 228.8)",
+          "oklch(49.3% 0.003 228.8)",
+          "oklch(60.7% 0.003 228.8)",
+          "oklch(72.1% 0.004 228.8)",
+          "oklch(83.6% 0.005 228.8)",
+          "oklch(95.0% 0.005 228.8)"
+        ]
+      },
+      "line-vermilion-dark": {
+        "role": "primary",
+        "displayName": "Signal Vermilion (dark)",
+        "canonical": "#ff6a4d",
+        "cssVariable": "--l1",
+        "tonalRamp": [
+          "oklch(15.0% 0.040 32.9)",
+          "oklch(26.4% 0.070 32.9)",
+          "oklch(37.9% 0.101 32.9)",
+          "oklch(49.3% 0.131 32.9)",
+          "oklch(60.7% 0.161 32.9)",
+          "oklch(72.1% 0.184 32.9)",
+          "oklch(83.6% 0.153 32.9)",
+          "oklch(95.0% 0.123 32.9)"
+        ]
+      },
+      "line-amber-dark": {
+        "role": "primary",
+        "displayName": "Timetable Amber (dark)",
+        "canonical": "#f2b900",
+        "cssVariable": "--l2",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 86.1)",
+          "oklch(26.4% 0.054 86.1)",
+          "oklch(37.9% 0.077 86.1)",
+          "oklch(49.3% 0.101 86.1)",
+          "oklch(60.7% 0.124 86.1)",
+          "oklch(72.1% 0.148 86.1)",
+          "oklch(83.6% 0.163 86.1)",
+          "oklch(95.0% 0.139 86.1)"
+        ]
+      },
+      "line-blue-dark": {
+        "role": "primary",
+        "displayName": "Route Blue (dark)",
+        "canonical": "#5aa9f0",
+        "cssVariable": "--l3",
+        "tonalRamp": [
+          "oklch(15.0% 0.027 247.8)",
+          "oklch(26.4% 0.048 247.8)",
+          "oklch(37.9% 0.069 247.8)",
+          "oklch(49.3% 0.090 247.8)",
+          "oklch(60.7% 0.111 247.8)",
+          "oklch(72.1% 0.129 247.8)",
+          "oklch(83.6% 0.108 247.8)",
+          "oklch(95.0% 0.087 247.8)"
+        ]
+      },
+      "line-green-dark": {
+        "role": "primary",
+        "displayName": "Junction Green (dark)",
+        "canonical": "#4cc08a",
+        "cssVariable": "--l4",
+        "tonalRamp": [
+          "oklch(15.0% 0.027 160.1)",
+          "oklch(26.4% 0.048 160.1)",
+          "oklch(37.9% 0.069 160.1)",
+          "oklch(49.3% 0.089 160.1)",
+          "oklch(60.7% 0.110 160.1)",
+          "oklch(72.1% 0.131 160.1)",
+          "oklch(83.6% 0.112 160.1)",
+          "oklch(95.0% 0.092 160.1)"
+        ]
+      },
+      "line-brown-dark": {
+        "role": "primary",
+        "displayName": "Ballast Brown (dark)",
+        "canonical": "#cf9a63",
+        "cssVariable": "--l5",
+        "tonalRamp": [
+          "oklch(15.0% 0.020 66.4)",
+          "oklch(26.4% 0.035 66.4)",
+          "oklch(37.9% 0.050 66.4)",
+          "oklch(49.3% 0.065 66.4)",
+          "oklch(60.7% 0.080 66.4)",
+          "oklch(72.1% 0.095 66.4)",
+          "oklch(83.6% 0.081 66.4)",
+          "oklch(95.0% 0.066 66.4)"
+        ]
+      },
+      "on-line-dark": {
+        "role": "neutral",
+        "displayName": "Numeral on Line (dark)",
+        "canonical": "#121416",
+        "cssVariable": "--on1 to --on5",
+        "tonalRamp": [
+          "oklch(15.0% 0.005 248.1)",
+          "oklch(26.4% 0.005 248.1)",
+          "oklch(37.9% 0.004 248.1)",
+          "oklch(49.3% 0.003 248.1)",
+          "oklch(60.7% 0.002 248.1)",
+          "oklch(72.1% 0.002 248.1)",
+          "oklch(83.6% 0.001 248.1)",
+          "oklch(95.0% 0.001 248.1)"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Timetable Stock (dark)",
+        "canonical": "#121416",
+        "cssVariable": "--paper",
+        "tonalRamp": [
+          "oklch(15.0% 0.005 248.1)",
+          "oklch(26.4% 0.005 248.1)",
+          "oklch(37.9% 0.004 248.1)",
+          "oklch(49.3% 0.003 248.1)",
+          "oklch(60.7% 0.002 248.1)",
+          "oklch(72.1% 0.002 248.1)",
+          "oklch(83.6% 0.001 248.1)",
+          "oklch(95.0% 0.001 248.1)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Press Ink (dark)",
+        "canonical": "#ecebe4",
+        "cssVariable": "--ink",
+        "tonalRamp": [
+          "oklch(15.0% 0.002 100.0)",
+          "oklch(26.4% 0.003 100.0)",
+          "oklch(37.9% 0.004 100.0)",
+          "oklch(49.3% 0.005 100.0)",
+          "oklch(60.7% 0.006 100.0)",
+          "oklch(72.1% 0.007 100.0)",
+          "oklch(83.6% 0.008 100.0)",
+          "oklch(95.0% 0.009 100.0)"
+        ]
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Second Impression (dark)",
+        "canonical": "#a8acb0",
+        "cssVariable": "--muted",
+        "tonalRamp": [
+          "oklch(15.0% 0.001 247.9)",
+          "oklch(26.4% 0.003 247.9)",
+          "oklch(37.9% 0.004 247.9)",
+          "oklch(49.3% 0.005 247.9)",
+          "oklch(60.7% 0.006 247.9)",
+          "oklch(72.1% 0.007 247.9)",
+          "oklch(83.6% 0.006 247.9)",
+          "oklch(95.0% 0.005 247.9)"
+        ]
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Hairline (dark)",
+        "canonical": "#383c41",
+        "cssVariable": "--rule",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 254.0)",
+          "oklch(26.4% 0.009 254.0)",
+          "oklch(37.9% 0.010 254.0)",
+          "oklch(49.3% 0.008 254.0)",
+          "oklch(60.7% 0.006 254.0)",
+          "oklch(72.1% 0.004 254.0)",
+          "oklch(83.6% 0.003 254.0)",
+          "oklch(95.0% 0.001 254.0)"
+        ]
+      },
+      "code-dark": {
+        "role": "neutral",
+        "displayName": "Code Tint (dark)",
+        "canonical": "#1e2125",
+        "cssVariable": "--code",
+        "tonalRamp": [
+          "oklch(15.0% 0.008 255.6)",
+          "oklch(26.4% 0.009 255.6)",
+          "oklch(37.9% 0.007 255.6)",
+          "oklch(49.3% 0.006 255.6)",
+          "oklch(60.7% 0.005 255.6)",
+          "oklch(72.1% 0.003 255.6)",
+          "oklch(83.6% 0.002 255.6)",
+          "oklch(95.0% 0.001 255.6)"
+        ]
+      },
+      "paper-print": {
+        "role": "neutral",
+        "displayName": "Timetable Stock (print)",
+        "canonical": "#ffffff",
+        "cssVariable": "--paper",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.4% 0.000 89.9)",
+          "oklch(37.9% 0.000 89.9)",
+          "oklch(49.3% 0.000 89.9)",
+          "oklch(60.7% 0.000 89.9)",
+          "oklch(72.1% 0.000 89.9)",
+          "oklch(83.6% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      },
+      "ink-print": {
+        "role": "neutral",
+        "displayName": "Press Ink (print)",
+        "canonical": "#111111",
+        "cssVariable": "--ink",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.4% 0.000 89.9)",
+          "oklch(37.9% 0.000 89.9)",
+          "oklch(49.3% 0.000 89.9)",
+          "oklch(60.7% 0.000 89.9)",
+          "oklch(72.1% 0.000 89.9)",
+          "oklch(83.6% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      },
+      "muted-print": {
+        "role": "neutral",
+        "displayName": "Second Impression (print)",
+        "canonical": "#444444",
+        "cssVariable": "--muted",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.4% 0.000 89.9)",
+          "oklch(37.9% 0.000 89.9)",
+          "oklch(49.3% 0.000 89.9)",
+          "oklch(60.7% 0.000 89.9)",
+          "oklch(72.1% 0.000 89.9)",
+          "oklch(83.6% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      },
+      "rule-print": {
+        "role": "neutral",
+        "displayName": "Hairline (print)",
+        "canonical": "#bbbbbb",
+        "cssVariable": "--rule",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.4% 0.000 89.9)",
+          "oklch(37.9% 0.000 89.9)",
+          "oklch(49.3% 0.000 89.9)",
+          "oklch(60.7% 0.000 89.9)",
+          "oklch(72.1% 0.000 89.9)",
+          "oklch(83.6% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      },
+      "code-print": {
+        "role": "neutral",
+        "displayName": "Code Tint (print)",
+        "canonical": "#eeeeee",
+        "cssVariable": "--code",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.4% 0.000 89.9)",
+          "oklch(37.9% 0.000 89.9)",
+          "oklch(49.3% 0.000 89.9)",
+          "oklch(60.7% 0.000 89.9)",
+          "oklch(72.1% 0.000 89.9)",
+          "oklch(83.6% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The page title only."
+      },
+      "headline-line": {
+        "displayName": "Headline Line",
+        "purpose": "The name of a line, beside its disc."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Unnumbered sections."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Stage names in the network figure and its captions."
+      },
+      "pitch": {
+        "displayName": "Pitch",
+        "purpose": "The one-line statement opening a line."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Introductory paragraphs."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, capped at 68ch."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Table cells, benefit rows, numbered steps and stage descriptions."
+      },
+      "note": {
+        "displayName": "Note",
+        "purpose": "Muted notes, source links and the footer."
+      },
+      "subhead": {
+        "displayName": "Subhead",
+        "purpose": "Groups within a line. Uppercase."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Column headers, step names, control text and running-head metadata. Uppercase."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Line numbers on 26px discs."
+      },
+      "numeral-large": {
+        "displayName": "Numeral Large",
+        "purpose": "Line numbers on 40px opener discs."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "Commands, paths and prompts."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "stop-fill",
+        "value": "background-color 150ms ease-out",
+        "purpose": "The current contents stop filling. Removed under prefers-reduced-motion."
+      },
+      {
+        "name": "copy-confirm-hold",
+        "value": "1600ms",
+        "purpose": "How long a copy control holds its Copied state. The state change itself is immediate."
+      },
+      {
+        "name": "copy-fallback-hold",
+        "value": "4000ms",
+        "purpose": "How long a copy control holds Selected after a clipboard failure."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "timetable-stack",
+        "value": "1240px"
+      },
+      {
+        "name": "rail-collapse",
+        "value": "960px"
+      },
+      {
+        "name": "diagram-vertical",
+        "value": "700px"
+      },
+      {
+        "name": "print",
+        "value": "A4, margins 16mm 15mm 18mm"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Copy Control",
+      "kind": "button",
+      "refersTo": "copy-control",
+      "description": "Small ruled label that copies one command; inverts on hover and confirmation.",
+      "html": "<button class=\"ds-copy\" type=\"button\">Copy</button> <button class=\"ds-copy ds-copy-done\" type=\"button\">Copied</button>",
+      "css": ".ds-copy{font-family:var(--sans);font-stretch:75%;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink);background:none;border:1px solid var(--ink);cursor:pointer;padding:2px 8px;min-width:60px;min-height:26px} .ds-copy:hover,.ds-copy-done{background:var(--ink);color:var(--paper)} .ds-copy:focus-visible{outline:2px solid var(--ink);outline-offset:2px}"
+    },
+    {
+      "name": "Theme Toggle",
+      "kind": "button",
+      "refersTo": "theme-toggle",
+      "description": "Masthead control naming the theme it switches to.",
+      "html": "<button class=\"ds-theme\" type=\"button\">Dark</button>",
+      "css": ".ds-theme{font-family:var(--sans);font-stretch:75%;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink);background:none;border:1px solid var(--ink);cursor:pointer;padding:5px 10px;min-height:30px} .ds-theme:hover{background:var(--ink);color:var(--paper)} .ds-theme:focus-visible{outline:2px solid var(--ink);outline-offset:2px}"
+    },
+    {
+      "name": "Contents Route",
+      "kind": "nav",
+      "refersTo": "route",
+      "description": "Contents drawn as a line with stops; the current stop fills.",
+      "html": "<ol class=\"ds-route\"><li><a href=\"#a\">What skills are</a></li><li class=\"ds-major\"><a href=\"#b\" aria-current=\"location\">1 Impeccable<small>design vocabulary</small></a></li><li class=\"ds-major ds-l3\"><a href=\"#c\">3 Superpowers<small>engineering workflow</small></a></li><li><a href=\"#d\">How they stack</a></li></ol>",
+      "css": ".ds-route{position:relative;margin:0;padding:0 0 0 34px;list-style:none;font-family:var(--sans);color:var(--ink)} .ds-route::before{content:\"\";position:absolute;left:7px;top:10px;bottom:16px;width:4px;background:var(--ink)} .ds-route li{position:relative;--c:var(--l1)} .ds-route .ds-l3{--c:var(--l3)} .ds-route a{display:block;color:inherit;text-decoration:none;padding:5px 0 9px;font-size:14px;line-height:1.3} .ds-route a:hover{text-decoration:underline;text-underline-offset:3px} .ds-route a:focus-visible{outline:2px solid var(--ink);outline-offset:2px} .ds-route a::before{content:\"\";position:absolute;left:-31px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--ink);transition:background-color .15s ease-out} .ds-route .ds-major a{font-weight:650;font-size:15px;padding:7px 0 11px} .ds-route .ds-major a::before{left:-32px;top:8px;width:14px;height:14px;border:4px solid var(--c)} .ds-route small{display:block;font-weight:400;font-size:12px;color:var(--muted);font-stretch:88%} .ds-route a[aria-current]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px} .ds-route a[aria-current]::before{background:var(--ink)} .ds-route .ds-major a[aria-current]::before{background:var(--c)}"
+    },
+    {
+      "name": "Line Disc",
+      "kind": "chip",
+      "refersTo": "line-disc",
+      "description": "Route-colour circle carrying a line number; amber takes the amber numeral colour.",
+      "html": "<span class=\"ds-disc\" style=\"background:var(--l1);color:var(--on1)\">1</span> <span class=\"ds-disc\" style=\"background:var(--l2);color:var(--on2)\">2</span> <span class=\"ds-disc\" style=\"background:var(--l3);color:var(--on3)\">3</span> <span class=\"ds-disc\" style=\"background:var(--l4);color:var(--on4)\">4</span> <span class=\"ds-disc\" style=\"background:var(--l5);color:var(--on5)\">5</span>",
+      "css": ".ds-disc{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;font-family:var(--sans);font-size:13px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Line Opener",
+      "kind": "custom",
+      "refersTo": "line-band",
+      "description": "A route band, disc, line name and source link that begin each line.",
+      "html": "<div class=\"ds-line\"><div class=\"ds-opener\"><span class=\"ds-big\">3</span><h2>Superpowers</h2><a href=\"#s\">github.com/obra/superpowers</a></div></div>",
+      "css": ".ds-line{border-top:10px solid var(--l3);padding-top:14px;font-family:var(--sans);color:var(--ink)} .ds-opener{display:flex;align-items:center;gap:16px;flex-wrap:wrap} .ds-big{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--l3);color:var(--on3);font-size:20px;font-weight:800;line-height:1} .ds-opener h2{margin:0;font-size:clamp(32px,4vw,44px);line-height:1;font-weight:800;font-stretch:72%} .ds-opener a{margin-left:auto;font-size:14px;color:var(--muted);text-decoration-thickness:1px;text-underline-offset:3px} .ds-opener a:hover{text-decoration-thickness:2px} .ds-opener a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}"
+    },
+    {
+      "name": "Command Row",
+      "kind": "custom",
+      "refersTo": "command-row",
+      "description": "The timetable unit: step, command, run-in cell and copy control on ruled rows.",
+      "html": "<ul class=\"ds-cmds\"><li class=\"ds-cmd\"><span class=\"ds-step\">Step 1</span><code>/plugin marketplace add trailofbits/skills</code><span class=\"ds-env\">Claude Code</span><button class=\"ds-c\" type=\"button\">Copy</button></li><li class=\"ds-cmd\"><span class=\"ds-step\">Step 2</span><code>/plugin menu</code><span class=\"ds-env\">Claude Code</span><button class=\"ds-c\" type=\"button\">Copy</button></li></ul>",
+      "css": ".ds-cmds{margin:0;padding:0;list-style:none;border-top:1px solid var(--ink);font-family:var(--sans);color:var(--ink)} .ds-cmd{display:grid;grid-template-columns:64px minmax(0,1fr) 84px auto;column-gap:16px;align-items:center;min-height:40px;padding:5px 0;border-bottom:1px solid var(--rule)} .ds-step{font-family:var(--sans);font-stretch:75%;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);white-space:nowrap} .ds-cmd code{font-family:var(--mono);font-size:14px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere} .ds-env{font-size:13px;color:var(--muted)} .ds-c{font-family:var(--sans);font-stretch:75%;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink);background:none;border:1px solid var(--ink);cursor:pointer;padding:2px 8px;min-width:60px;min-height:26px} .ds-c:hover{background:var(--ink);color:var(--paper)} .ds-c:focus-visible{outline:2px solid var(--ink);outline-offset:2px}"
+    },
+    {
+      "name": "Ruled Benefit List",
+      "kind": "custom",
+      "refersTo": "table-cell",
+      "description": "Two-column ruled list with square route markers.",
+      "html": "<ul class=\"ds-ben\"><li><b>Smaller diffs.</b> No speculative abstractions.</li><li><b>Done means checked.</b> Work is tied to something that can pass or fail.</li></ul>",
+      "css": ".ds-ben{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin:0;padding:0;list-style:none;border-top:1px solid var(--ink);font-family:var(--sans);color:var(--ink)} .ds-ben li{position:relative;padding:10px 0 10px 18px;border-bottom:1px solid var(--rule);font-size:15px;line-height:1.5} .ds-ben li::before{content:\"\";position:absolute;left:0;top:18px;width:7px;height:7px;background:var(--l2)} .ds-ben b{font-weight:650}"
+    },
+    {
+      "name": "Example Prompt",
+      "kind": "custom",
+      "refersTo": "prompt-block",
+      "description": "Flat code-tint band holding a realistic prompt and its copy control.",
+      "html": "<div class=\"ds-ex\"><div class=\"ds-prompt\"><code>/impeccable critique the pricing page</code><button class=\"ds-p\" type=\"button\">Copy</button></div></div>",
+      "css": ".ds-ex{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)} .ds-prompt{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:start;background:var(--code);color:var(--ink);padding:14px 16px} .ds-prompt code{font-family:var(--mono);font-size:14px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere} .ds-prompt code::before{content:\"> \";color:var(--muted)} .ds-p{font-family:var(--sans);font-stretch:75%;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink);background:none;border:1px solid var(--ink);cursor:pointer;padding:2px 8px;min-width:60px;min-height:26px} .ds-p:hover{background:var(--ink);color:var(--paper)} .ds-p:focus-visible{outline:2px solid var(--ink);outline-offset:2px}"
+    },
+    {
+      "name": "Notice",
+      "kind": "card",
+      "refersTo": "notice",
+      "description": "The one fully framed element, reserved for safety warnings.",
+      "html": "<section class=\"ds-notice\"><h2>Before you install</h2><ul><li>Read every script a skill ships before installing it.</li><li>Read the changes again when you update.</li></ul></section>",
+      "css": ".ds-notice{border:2px solid var(--ink);padding:18px 22px 20px;font-family:var(--sans);color:var(--ink)} .ds-notice h2{margin:0 0 8px;font-size:26px;line-height:1.1;font-weight:800;font-stretch:75%} .ds-notice ul{margin:10px 0 0;padding:0;list-style:none} .ds-notice li{position:relative;padding-left:18px;margin-top:6px;font-size:15px} .ds-notice li::before{content:\"\";position:absolute;left:0;top:10px;width:7px;height:2px;background:var(--ink)}"
+    },
+    {
+      "name": "Network Interchange",
+      "kind": "custom",
+      "refersTo": "line-band",
+      "description": "Paired route segments leave a 2px trunk and rejoin it through a capsule interchange.",
+      "html": "<svg class=\"ds-net\" viewBox=\"0 0 360 150\" role=\"img\" aria-label=\"Two lines leave the trunk and rejoin it at one interchange\"><path class=\"ds-trunk\" d=\"M20 90H340\"/><circle class=\"ds-stn\" cx=\"20\" cy=\"90\" r=\"7\"/><circle cx=\"340\" cy=\"90\" r=\"8\" fill=\"var(--ink)\"/><path class=\"ds-seg\" stroke=\"var(--l3)\" d=\"M60 90C82 90 78 78 100 78H260C282 78 278 90 300 90\"/><path class=\"ds-seg\" stroke=\"var(--l2)\" d=\"M60 90C82 90 78 102 100 102H260C282 102 278 90 300 90\"/><rect class=\"ds-stn\" x=\"169\" y=\"64\" width=\"22\" height=\"52\" rx=\"11\"/><text class=\"ds-st\" x=\"180\" y=\"40\" text-anchor=\"middle\">Write the code</text></svg>",
+      "css": ".ds-net{display:block;width:100%;max-width:360px;height:auto;font-family:var(--sans)} .ds-trunk{stroke:var(--ink);stroke-width:2;fill:none} .ds-seg{stroke-width:10;stroke-linecap:round;fill:none} .ds-stn{fill:var(--paper);stroke:var(--ink);stroke-width:3} .ds-st{fill:var(--ink);font-size:18px;font-weight:800;font-stretch:75%}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Line Timetable",
+    "overview": "The system is a printed transit timetable and the network diagram bound in with it. Each subject is a line on one small network: it owns a route colour, a number and a place on the map. Information sits on uncoated stock in near-black ink, held in ruled tables, and the reader moves down it one stop at a time.\n\nDensity is high and scannable. Structure comes from rules, columns and tabular figures, so the page reads the way a timetable reads: find the row, follow it across. Commands are the primary content and get the same ruled row treatment as departures. Colour is scarce and always means which line you are on.\n\nThe same system renders on screen, in dark mode and on A4 paper. Paper is a first-class output with its own token set. The system refuses the docs-site default of a tinted sidebar, rounded dark code cards and a hero, and it carries the product's standing refusal of purple gradients, emoji icons, glassmorphism and three-card feature rows.",
+    "keyCharacteristics": [
+      "Flat stock, no shadows, hierarchy from rule weight alone",
+      "Five route colours used only as bands, stop markers and line numbers",
+      "One variable sans whose width axis does the work of a second typeface",
+      "Square corners everywhere except the network's own stops and interchanges",
+      "Motion limited to the current stop filling"
+    ],
+    "rules": [
+      {
+        "name": "The Route Colour Is Not Ink Rule",
+        "body": "Route colours appear only as bands, stop markers, square list markers, network segments and line-number discs. They are never a text colour, because amber and vermilion fall below 4.5:1 on light stock, and never a ground for reading text. A line numeral on its disc is the only text a route colour carries.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Line One Colour Rule",
+        "body": "A route colour identifies exactly one line and means nothing else: no status, no emphasis, no links. Warnings are set in ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Sets Rule",
+        "body": "Every neutral and route colour is defined for light and dark, and every neutral again for print. Print keeps the light route colours and forces them to render with exact colour adjustment.",
+        "section": "colors"
+      },
+      {
+        "name": "The Width Before Weight Rule",
+        "body": "Hierarchy is set on the width axis first. Condensed means a label or an opener; normal width means read this. Do not condense reading text or set labels at normal width.",
+        "section": "typography"
+      },
+      {
+        "name": "The Pasteable Is Mono Rule",
+        "body": "JetBrains Mono marks only commands, paths, prompts and identifiers. Explanations of a command, including hints inside a command cell, return to Archivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Tables and line numbers use tabular numerals so figures align down a column.",
+        "section": "typography"
+      },
+      {
+        "name": "The Rule Weight Ladder Rule",
+        "body": "Four weights, each with one job: a 1px hairline divides rows within a group, a 1px ink rule opens or closes a table or group, a 2px ink rule opens a section or frames the page, and a 10px route band opens a line. Do not add intermediate weights. Drawn route lines in navigation and diagrams are track, not rules, and keep their own weights.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Flat Stock Rule",
+        "body": "Surfaces never lift. Hover inverts a control to ink; it does not raise it.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do give every new line a route colour, a number and a disc, and carry that colour through its band, stop and diagram segment.",
+      "Do define any new route colour for light and dark, with a numeral colour reaching at least 4.5:1 on it in both.",
+      "Do choose rule weight from the ladder: 1px hairline, 1px ink, 2px ink, 10px band.",
+      "Do set commands in ruled rows with a copy control, and print them wrapped and unbroken across pages.",
+      "Do use uppercase condensed labels to name columns, steps, groups and controls.",
+      "Do keep circles and capsules for stops, discs and interchanges.",
+      "Do check every new surface on A4 as well as in both screen themes."
+    ],
+    "donts": [
+      "Don't use a route colour for text, links, status or as a ground behind reading text.",
+      "Don't add box shadows, gradients, blurs or glassmorphism.",
+      "Don't round panels, controls, code tints or tables.",
+      "Don't set code in dark rounded cards, or tint the navigation rail.",
+      "Don't add a hero with feature cards, purple gradients or emoji icons.",
+      "Don't place small uppercase kickers above headings; a label must name a column, step, group or control, or carry document metadata in the masthead.",
+      "Don't animate anything beyond the current stop filling, which is the only transition; the copy confirmation is an immediate state change.",
+      "Don't box content with a full frame unless it is a safety notice."
+    ]
+  }
+}

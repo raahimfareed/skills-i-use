@@ -1,0 +1,121 @@
+{
+  "title": "Skills I Use: choose the visual world",
+  "question": "The roll assigned Line Timetable. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned", "kind": "assigned", "label": "Line Timetable", "kicker": "THE ROLL",
+      "lineage": "printed transit timetables and network diagrams",
+      "thesis": "Five skills set as five lines on one network: each has a route colour, a numbered stop list, and a place on the map.",
+      "palette": ["#f5f5f0", "#15181b", "#d4351c", "#0b5cad", "#1c7c54", "#e0a800", "#7b4a1e"],
+      "materials": ["uncoated timetable stock", "hairline rules", "route-colour bands", "tabular figures"],
+      "viewport": "Left: a contents rail drawn as a line diagram with five coloured stops. Centre: title, two-sentence intro, then the quick-install block set as a ruled timetable, one row per command with a copy control. Each skill section opens with a route band, line number and pitch.",
+      "risk": "Five route colours can turn loud; they must stay as thin bands and markers, never fills behind text.",
+      "raised": [
+        {"from": "challenger-emission", "raise": "Everything registers against one off-centre rail: the route line runs the full page and every section, command and note hangs off it."},
+        {"from": "challenger-sampler", "raise": "Sections descend in the order work happens: write code, shape UI, check what ships."}
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick", "kind": "pick", "label": "The Printed Manual", "kicker": "IMPECCABLE’S PICK",
+      "lineage": "white-cover programming manuals and their numbered sections",
+      "thesis": "A short technical manual: numbered chapters, a serif reading column, large mono listings, a running head.",
+      "palette": ["#fbfaf7", "#1a1a1a", "#0f5f66", "#e9e6df"],
+      "materials": ["book serif", "mono listings", "section numbers", "margin labels"],
+      "viewport": "Left: numbered contents. Centre: chapter-style title, intro in a serif column, then listing 0.1, the quick-install commands, in a ruled code block with copy controls. Skill sections are chapters 1 to 5 with margin labels for Install, Benefits, Example.",
+      "risk": "Also where most documentation pages in this category land; it reads correct more than distinct.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {
+      "id": "challenger-swiss", "kind": "challenger", "catalogId": "design-canon-swiss-grid-poster-wall",
+      "label": "Swiss Grid Series", "verdict": "competitive",
+      "lineage": "International Style concert-poster series",
+      "thesis": "One strict module, five posters: each skill gets a geometric mark and a large numeral, all on the same grid.",
+      "palette": ["#ffffff", "#0d0d0d", "#1242c9", "#e6e6e6"],
+      "materials": ["flush-left grotesk", "visible module", "arcs and bars", "one signal blue"],
+      "viewport": "A 12-column grid shown plainly. Title set large flush left across eight columns, contents as a typographic list in the last four, quick-install below as rows on the module. Each skill opens with a numeral and its own bar-and-arc figure.",
+      "case": "Holds product clarity: the grid makes commands and benefits easy to scan. Loses on audience identification: developers read it as a design exercise first.",
+      "risk": "Large numerals and geometry push the commands further down the page.",
+      "html": ".impeccable/mocks/decision/challenger-swiss.html",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-swiss-grid-poster-wall-hero.webp"
+    },
+    {
+      "id": "challenger-emission", "kind": "challenger", "catalogId": "operate-c-emission-line-rail",
+      "label": "Emission-Line Rail", "verdict": "declined",
+      "lineage": "glass spectrogram plates",
+      "thesis": "Everything hangs off one calibrated rail on a charcoal continuum.",
+      "palette": ["#2a2c2e", "#e8e2d2", "#ffd24a", "#57c7ff"],
+      "materials": ["charcoal banding", "hairline spectral lines"],
+      "viewport": "A rail with five ticks; the open one blooms into a plate.",
+      "case": "Single type size and dark-only ground fight a light and dark reference page that prints on A4.",
+      "risk": "Navigation the reader has to learn.",
+      "kept": "One rail that every element registers against.",
+      "hero": "https://impeccable.style/worlds/cards/operate-c-emission-line-rail-hero.webp"
+    },
+    {
+      "id": "challenger-sampler", "kind": "challenger", "catalogId": "graphic-worlds-publishing-sampler-alphabet-proof",
+      "label": "Stitched Sampler", "verdict": "declined",
+      "lineage": "needlework practice samplers",
+      "thesis": "Bands stacked in order of difficulty, signed at the foot.",
+      "palette": ["#e7dcc3", "#a23b2a", "#27406b", "#3f6b3a"],
+      "materials": ["linen ground", "silk stitch"],
+      "viewport": "Stacked bands, one per skill, loosening down the sheet.",
+      "case": "Senior developers do not see themselves in it, and stitched type hurts command legibility.",
+      "risk": "Craft novelty over reference use.",
+      "kept": "Bands ordered as the work actually progresses.",
+      "hero": "https://impeccable.style/worlds/cards/graphic-worlds-publishing-sampler-alphabet-proof-hero.webp"
+    },
+    {
+      "id": "challenger-cutting", "kind": "challenger", "catalogId": "operate-a-cutting-bench-select-rail",
+      "label": "Cutting Bench", "verdict": "declined",
+      "lineage": "film editing benches",
+      "thesis": "A perforated rail of frames across a grain-orange field.",
+      "palette": ["#0a0a0a", "#f26a1b", "#ffffff"],
+      "materials": ["film grain", "punched windows"],
+      "viewport": "Frames strung on a rail, prose in white windows.",
+      "case": "Orange on a third of the screen and a scrubbing strip work against calm reading and print.",
+      "risk": "Loud by construction.",
+      "kept": "State shown as a mark, not a hue.",
+      "hero": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail-hero.webp"
+    },
+    {
+      "id": "challenger-daylight", "kind": "challenger", "catalogId": "architecture-inhabitable-space-daylight-section",
+      "label": "Daylight Section", "verdict": "declined",
+      "lineage": "architectural section drawings",
+      "thesis": "One long building section with a sunbeam as the active band.",
+      "palette": ["#f4f1ea", "#2b2b2e", "#e2b33c", "#6f86a6"],
+      "materials": ["limewash", "section poche"],
+      "viewport": "A continuous section with annotations pinned to sun angles.",
+      "case": "No true mapping from skills to rooms and light; the metaphor would have to be invented.",
+      "risk": "Decoration without a job.",
+      "kept": "Annotations pinned to the thing they describe.",
+      "hero": "https://impeccable.style/worlds/cards/architecture-inhabitable-space-daylight-section-hero.webp"
+    },
+    {
+      "id": "challenger-cape", "kind": "challenger", "catalogId": "textiles-weave-drape-fashion-drawcord-transforming-cape",
+      "label": "Drawcord Cape", "verdict": "declined",
+      "lineage": "transforming garments",
+      "thesis": "A flat black plane that one gold cord pulls into volume.",
+      "palette": ["#111111", "#c9a227", "#4a4f57"],
+      "materials": ["matte silk", "gold cord"],
+      "viewport": "A semicircle that gathers as sections open.",
+      "case": "Fashion grammar says nothing to this audience and adds a transformation the content does not need.",
+      "risk": "Pure costume.",
+      "kept": "One accent that is also the control.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-drawcord-transforming-cape-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code"},
+  "canon": true,
+  "canonCard": {
+    "kind": "canon", "label": "The category standard",
+    "thesis": "A standard docs site: sidebar, content column, on-this-page list.",
+    "palette": ["#ffffff", "#0f172a", "#2563eb", "#f1f5f9"],
+    "materials": ["system sans", "rounded code blocks"],
+    "viewport": "Top bar, left sidebar, centred content with a quick-install code block, right-hand section list.",
+    "risk": "Indistinguishable from every other docs page by design.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}
